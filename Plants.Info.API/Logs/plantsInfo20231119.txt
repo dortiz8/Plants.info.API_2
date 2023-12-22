@@ -1,0 +1,45 @@
+2023-11-19 18:58:31.645 -05:00 [DBG] Connection id "0HMV8HO6IBVJS" accepted.
+2023-11-19 18:58:31.939 -05:00 [DBG] Connection id "0HMV8HO6IBVJS" started.
+2023-11-19 18:58:31.972 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-11-19 18:58:31.979 -05:00 [DBG] The request path  does not match the path filter
+2023-11-19 18:58:31.980 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-11-19 18:58:31.982 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 10.5768ms
+2023-11-19 18:58:31.982 -05:00 [DBG] Connection id "0HMV8HO6IBVJS" disconnecting.
+2023-11-19 18:58:31.982 -05:00 [DBG] Connection id "0HMV8HO6IBVJS" stopped.
+2023-11-19 18:58:32.005 -05:00 [DBG] Connection id "0HMV8HO6IBVJS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-19 18:58:32.074 -05:00 [DBG] Connection id "0HMV8HO6IBVJT" accepted.
+2023-11-19 18:58:32.098 -05:00 [DBG] Connection id "0HMV8HO6IBVJT" started.
+2023-11-19 18:58:32.235 -05:00 [DBG] Connection 0HMV8HO6IBVJT established using the following protocol: "Tls12"
+2023-11-19 18:58:32.237 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-11-19 18:58:32.238 -05:00 [DBG] OPTIONS requests are not supported
+2023-11-19 18:58:32.240 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-11-19 18:58:32.240 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-11-19 18:58:32.242 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-11-19 18:58:32.242 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-11-19 18:58:32.242 -05:00 [INF] CORS policy execution successful.
+2023-11-19 18:58:32.243 -05:00 [DBG] The request is a preflight request.
+2023-11-19 18:58:32.243 -05:00 [DBG] Connection id "0HMV8HO6IBVJT" completed keep alive response.
+2023-11-19 18:58:32.244 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 6.4967ms
+2023-11-19 18:58:32.247 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-11-19 18:58:32.247 -05:00 [DBG] The request path  does not match the path filter
+2023-11-19 18:58:32.247 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-11-19 18:58:32.248 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-11-19 18:58:32.249 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-11-19 18:58:32.279 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/19/2023 2:35:38 AM', Current time: '11/19/2023 11:58:32 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-11-19 18:58:32.290 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/19/2023 2:35:38 AM', Current time: '11/19/2023 11:58:32 PM'.
+2023-11-19 18:58:32.290 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-11-19 18:58:32.290 -05:00 [INF] CORS policy execution successful.
+2023-11-19 18:58:32.298 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-11-19 18:58:32.306 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-11-19 18:58:32.306 -05:00 [DBG] Connection id "0HMV8HO6IBVJT" completed keep alive response.
+2023-11-19 18:58:32.306 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 59.0184ms
+2023-11-19 19:04:32.840 -05:00 [DBG] Connection id "0HMV8HO6IBVJT" received FIN.
+2023-11-19 19:04:32.865 -05:00 [DBG] Connection id "0HMV8HO6IBVJT" disconnecting.
+2023-11-19 19:04:32.891 -05:00 [DBG] Connection id "0HMV8HO6IBVJT" sending FIN because: "The client closed the connection."
+2023-11-19 19:04:32.898 -05:00 [DBG] Connection id "0HMV8HO6IBVJT" stopped.

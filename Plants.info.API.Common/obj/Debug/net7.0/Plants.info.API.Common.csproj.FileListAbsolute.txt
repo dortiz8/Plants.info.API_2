@@ -1,0 +1,17 @@
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/bin/Debug/net7.0/Plants.info.API.Common
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/bin/Debug/net7.0/Plants.info.API.Common.deps.json
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/bin/Debug/net7.0/Plants.info.API.Common.runtimeconfig.json
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/bin/Debug/net7.0/Plants.info.API.Common.dll
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/bin/Debug/net7.0/Plants.info.API.Common.pdb
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/Plants.info.API.Common.csproj.AssemblyReference.cache
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/Plants.info.API.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/Plants.info.API.Common.AssemblyInfoInputs.cache
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/Plants.info.API.Common.AssemblyInfo.cs
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/Plants.info.API.Common.csproj.CoreCompileInputs.cache
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/Plants.info.API.Common.csproj.CopyComplete
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/Plants.info.API.Common.dll
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/refint/Plants.info.API.Common.dll
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/Plants.info.API.Common.pdb
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/Plants.info.API.Common.genruntimeconfig.cache
+/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/obj/Debug/net7.0/ref/Plants.info.API.Common.dll

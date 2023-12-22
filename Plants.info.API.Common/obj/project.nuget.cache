@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IBjG+oPYwWTckYPKr7S3JR6Yfw9qSuHwyDCkHG26BTJjmqULmHPdnh4hI/iVcRQ1o+dXzogtCLdG2mbAz6sgvQ==",
+  "success": true,
+  "projectFilePath": "/Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Common/Plants.info.API.Common.csproj",
+  "expectedPackageFiles": [
+    "/Users/dortiz/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.14/microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

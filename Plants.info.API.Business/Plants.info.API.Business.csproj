@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Data\Services\" />
+    <None Remove="Data\Services\Extensions\" />
+    <None Remove="Data\Services\PlantServices\" />
+    <None Remove="Data\Services\UserServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Data\Services\" />
+    <Folder Include="Data\Services\Extensions\" />
+    <Folder Include="Data\Services\PlantServices\" />
+    <Folder Include="Data\Services\UserServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="6.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Plants.info.API.Common\Plants.info.API.Common.csproj" />
+    <ProjectReference Include="..\Plants.info.API.Persistence\Plants.info.API.Persistence.csproj" />
+    <ProjectReference Include="..\Plants.info.API.Security\Plants.info.API.Security.csproj" />
+  </ItemGroup>
+</Project>

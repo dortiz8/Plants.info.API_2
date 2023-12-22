@@ -1,0 +1,1148 @@
+2023-12-15 07:47:34.850 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-15 07:47:35.273 -05:00 [DBG] Hosting starting
+2023-12-15 07:47:35.311 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-15 07:47:35.316 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-15 07:47:35.324 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-15 07:47:35.325 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-15 07:47:35.326 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-15 07:47:35.331 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-15 07:47:35.335 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-15 07:47:35.336 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-15 07:47:35.336 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-15 07:47:35.342 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-15 07:47:35.344 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-15 07:47:35.359 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-15 07:47:35.359 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-15 07:47:35.364 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-15 07:47:35.365 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-15 07:47:36.580 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-15 07:47:36.580 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-15 07:47:36.580 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-15 07:47:36.581 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 07:47:36.581 -05:00 [INF] Hosting environment: Development
+2023-12-15 07:47:36.581 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-15 07:47:36.581 -05:00 [DBG] Hosting started
+2023-12-15 07:47:36.601 -05:00 [DBG] Connection id "0HMVTDG1TLAKJ" accepted.
+2023-12-15 07:47:36.602 -05:00 [DBG] Connection id "0HMVTDG1TLAKJ" started.
+2023-12-15 07:47:37.594 -05:00 [DBG] Connection id "0HMVTDG1TLAKJ" received FIN.
+2023-12-15 07:47:37.609 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-15 07:47:37.653 -05:00 [DBG] Connection id "0HMVTDG1TLAKJ" stopped.
+2023-12-15 07:47:37.657 -05:00 [DBG] Connection id "0HMVTDG1TLAKJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 07:47:37.793 -05:00 [DBG] Connection id "0HMVTDG1TLAKK" accepted.
+2023-12-15 07:47:37.793 -05:00 [DBG] Connection id "0HMVTDG1TLAKK" started.
+2023-12-15 07:47:37.815 -05:00 [DBG] Connection id "0HMVTDG1TLAKL" accepted.
+2023-12-15 07:47:37.815 -05:00 [DBG] Connection id "0HMVTDG1TLAKL" started.
+2023-12-15 07:47:37.914 -05:00 [DBG] Connection 0HMVTDG1TLAKK established using the following protocol: "Tls12"
+2023-12-15 07:47:37.914 -05:00 [DBG] Connection 0HMVTDG1TLAKL established using the following protocol: "Tls12"
+2023-12-15 07:47:37.970 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-15 07:47:37.971 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-15 07:47:38.092 -05:00 [DBG] Connection id "0HMVTDG1TLAKL" completed keep alive response.
+2023-12-15 07:47:38.094 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 127.4194ms
+2023-12-15 07:47:38.124 -05:00 [DBG] Connection id "0HMVTDG1TLAKM" accepted.
+2023-12-15 07:47:38.127 -05:00 [DBG] Connection id "0HMVTDG1TLAKM" started.
+2023-12-15 07:47:38.130 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui.css - -
+2023-12-15 07:47:38.130 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui-bundle.js - -
+2023-12-15 07:47:38.210 -05:00 [DBG] Connection 0HMVTDG1TLAKM established using the following protocol: "Tls12"
+2023-12-15 07:47:38.211 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui-standalone-preset.js - -
+2023-12-15 07:47:38.214 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-15 07:47:38.215 -05:00 [DBG] Connection id "0HMVTDG1TLAKL" completed keep alive response.
+2023-12-15 07:47:38.215 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-12-15 07:47:38.215 -05:00 [DBG] Connection id "0HMVTDG1TLAKM" completed keep alive response.
+2023-12-15 07:47:38.215 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 4.6461ms
+2023-12-15 07:47:38.215 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui.css - - - 200 143632 text/css 85.6370ms
+2023-12-15 07:47:38.224 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-12-15 07:47:38.224 -05:00 [DBG] Connection id "0HMVTDG1TLAKK" completed keep alive response.
+2023-12-15 07:47:38.224 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 94.7913ms
+2023-12-15 07:47:38.848 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-15 07:47:39.064 -05:00 [DBG] Connection id "0HMVTDG1TLAKK" completed keep alive response.
+2023-12-15 07:47:39.065 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 216.5615ms
+2023-12-15 07:55:04.691 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-15 07:55:04.902 -05:00 [DBG] Hosting starting
+2023-12-15 07:55:04.935 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-15 07:55:04.940 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-15 07:55:04.946 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-15 07:55:04.946 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-15 07:55:04.947 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-15 07:55:04.951 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-15 07:55:04.955 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-15 07:55:04.956 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-15 07:55:04.956 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-15 07:55:04.961 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-15 07:55:04.963 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-15 07:55:04.975 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-15 07:55:04.975 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-15 07:55:04.979 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-15 07:55:04.979 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-15 07:55:05.584 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-15 07:55:05.584 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-15 07:55:05.584 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-15 07:55:05.584 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 07:55:05.584 -05:00 [INF] Hosting environment: Development
+2023-12-15 07:55:05.584 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-15 07:55:05.584 -05:00 [DBG] Hosting started
+2023-12-15 07:55:05.605 -05:00 [DBG] Connection id "0HMVTDK7NMFBH" accepted.
+2023-12-15 07:55:05.606 -05:00 [DBG] Connection id "0HMVTDK7NMFBH" started.
+2023-12-15 07:55:06.587 -05:00 [DBG] Connection id "0HMVTDK7NMFBH" received FIN.
+2023-12-15 07:55:06.637 -05:00 [DBG] Connection id "0HMVTDK7NMFBI" accepted.
+2023-12-15 07:55:06.638 -05:00 [DBG] Connection id "0HMVTDK7NMFBI" started.
+2023-12-15 07:55:06.667 -05:00 [DBG] Connection id "0HMVTDK7NMFBJ" accepted.
+2023-12-15 07:55:06.668 -05:00 [DBG] Connection id "0HMVTDK7NMFBJ" started.
+2023-12-15 07:55:06.594 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-15 07:55:06.706 -05:00 [DBG] Connection id "0HMVTDK7NMFBH" stopped.
+2023-12-15 07:55:06.716 -05:00 [DBG] Connection id "0HMVTDK7NMFBH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 07:55:06.749 -05:00 [DBG] Connection 0HMVTDK7NMFBI established using the following protocol: "Tls12"
+2023-12-15 07:55:06.752 -05:00 [DBG] Connection 0HMVTDK7NMFBJ established using the following protocol: "Tls12"
+2023-12-15 07:55:06.828 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-15 07:55:06.830 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-15 07:55:06.967 -05:00 [DBG] Connection id "0HMVTDK7NMFBI" completed keep alive response.
+2023-12-15 07:55:06.969 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 143.0865ms
+2023-12-15 07:55:07.476 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-15 07:55:08.090 -05:00 [DBG] Connection id "0HMVTDK7NMFBI" completed keep alive response.
+2023-12-15 07:55:08.090 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 614.9498ms
+2023-12-15 07:55:27.895 -05:00 [DBG] Connection id "0HMVTDK7NMFBK" accepted.
+2023-12-15 07:55:27.895 -05:00 [DBG] Connection id "0HMVTDK7NMFBK" started.
+2023-12-15 07:55:27.909 -05:00 [DBG] Connection 0HMVTDK7NMFBK established using the following protocol: "Tls12"
+2023-12-15 07:55:27.911 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 07:55:27.914 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 07:55:27.945 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 07:55:27.947 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 07:55:27.947 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 07:55:27.950 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 07:55:27.950 -05:00 [INF] CORS policy execution successful.
+2023-12-15 07:55:27.951 -05:00 [DBG] The request is a preflight request.
+2023-12-15 07:55:27.952 -05:00 [DBG] Connection id "0HMVTDK7NMFBK" completed keep alive response.
+2023-12-15 07:55:27.953 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 41.1427ms
+2023-12-15 07:55:28.033 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 07:55:28.033 -05:00 [DBG] POST requests are not supported
+2023-12-15 07:55:28.035 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 07:55:28.035 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 07:55:28.035 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 07:55:28.036 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 07:55:28.036 -05:00 [INF] CORS policy execution successful.
+2023-12-15 07:55:28.141 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 07:55:28.144 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 07:55:28.169 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 07:55:28.170 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 07:55:28.171 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 07:55:28.171 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 07:55:28.171 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 07:55:28.171 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 07:55:28.173 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 07:55:28.241 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 07:55:28.245 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 07:55:28.247 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 07:55:28.248 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 07:55:28.248 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 07:55:28.253 -05:00 [DBG] Connection id "0HMVTDK7NMFBK", Request id "0HMVTDK7NMFBK:00000002": started reading request body.
+2023-12-15 07:55:28.253 -05:00 [DBG] Connection id "0HMVTDK7NMFBK", Request id "0HMVTDK7NMFBK:00000002": done reading request body.
+2023-12-15 07:55:28.370 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 07:55:28.371 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 07:55:28.371 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 07:55:28.379 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 07:56:20.227 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-12-15 07:56:20.229 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-12-15 07:56:20.229 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-15 07:56:20.229 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-15 07:56:20.230 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-15 07:56:20.230 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Data.Models.Authentication.AuthResponseBody'.
+2023-12-15 07:56:20.267 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 52093.8275ms
+2023-12-15 07:56:20.268 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 07:56:20.270 -05:00 [DBG] Connection id "0HMVTDK7NMFBK" completed keep alive response.
+2023-12-15 07:56:20.274 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 200 473 application/json;+charset=utf-8 52243.2158ms
+2023-12-15 07:56:20.902 -05:00 [DBG] Connection id "0HMVTDK7NMFBJ" received FIN.
+2023-12-15 07:56:20.904 -05:00 [DBG] Connection id "0HMVTDK7NMFBJ" sending FIN because: "The client closed the connection."
+2023-12-15 07:56:20.904 -05:00 [DBG] Connection id "0HMVTDK7NMFBJ" disconnecting.
+2023-12-15 07:56:20.905 -05:00 [DBG] Connection id "0HMVTDK7NMFBJ" stopped.
+2023-12-15 07:56:21.371 -05:00 [DBG] Connection id "0HMVTDK7NMFBL" accepted.
+2023-12-15 07:56:21.371 -05:00 [DBG] Connection id "0HMVTDK7NMFBL" started.
+2023-12-15 07:56:21.378 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-15 07:56:21.378 -05:00 [DBG] The request path  does not match the path filter
+2023-12-15 07:56:21.383 -05:00 [DBG] Https port '7235' discovered from server endpoints.
+2023-12-15 07:56:21.387 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-15 07:56:21.387 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 8.8486ms
+2023-12-15 07:56:21.387 -05:00 [DBG] Connection id "0HMVTDK7NMFBL" disconnecting.
+2023-12-15 07:56:21.387 -05:00 [DBG] Connection id "0HMVTDK7NMFBL" stopped.
+2023-12-15 07:56:21.387 -05:00 [DBG] Connection id "0HMVTDK7NMFBL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 07:56:21.403 -05:00 [DBG] Connection id "0HMVTDK7NMFBM" accepted.
+2023-12-15 07:56:21.403 -05:00 [DBG] Connection id "0HMVTDK7NMFBM" started.
+2023-12-15 07:56:21.422 -05:00 [DBG] Connection 0HMVTDK7NMFBM established using the following protocol: "Tls12"
+2023-12-15 07:56:21.423 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-15 07:56:21.423 -05:00 [DBG] The request path  does not match the path filter
+2023-12-15 07:56:21.423 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-15 07:56:21.424 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-15 07:56:21.424 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-15 07:56:21.424 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 07:56:21.424 -05:00 [INF] CORS policy execution successful.
+2023-12-15 07:56:21.427 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 07:56:21.490 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-15 07:56:21.504 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-15 07:56:21.505 -05:00 [DBG] Connection id "0HMVTDK7NMFBM" completed keep alive response.
+2023-12-15 07:56:21.505 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 81.8559ms
+2023-12-15 13:11:54.955 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-15 13:11:55.163 -05:00 [DBG] Hosting starting
+2023-12-15 13:11:55.198 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-15 13:11:55.204 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-15 13:11:55.211 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-15 13:11:55.212 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-15 13:11:55.213 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-15 13:11:55.218 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-15 13:11:55.222 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-15 13:11:55.222 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-15 13:11:55.222 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-15 13:11:55.228 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-15 13:11:55.230 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-15 13:11:55.241 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-15 13:11:55.241 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-15 13:11:55.244 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-15 13:11:55.245 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-15 13:11:55.844 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-15 13:11:55.844 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-15 13:11:55.844 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-15 13:11:55.844 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 13:11:55.844 -05:00 [INF] Hosting environment: Development
+2023-12-15 13:11:55.845 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-15 13:11:55.845 -05:00 [DBG] Hosting started
+2023-12-15 13:11:55.868 -05:00 [DBG] Connection id "0HMVTJ597M42N" accepted.
+2023-12-15 13:11:55.868 -05:00 [DBG] Connection id "0HMVTJ597M42N" started.
+2023-12-15 13:11:56.861 -05:00 [DBG] Connection id "0HMVTJ597M42N" received FIN.
+2023-12-15 13:11:56.870 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-15 13:11:56.911 -05:00 [DBG] Connection id "0HMVTJ597M42N" stopped.
+2023-12-15 13:11:56.914 -05:00 [DBG] Connection id "0HMVTJ597M42N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 13:11:57.069 -05:00 [DBG] Connection id "0HMVTJ597M42O" accepted.
+2023-12-15 13:11:57.069 -05:00 [DBG] Connection id "0HMVTJ597M42O" started.
+2023-12-15 13:11:57.073 -05:00 [DBG] Connection id "0HMVTJ597M42P" accepted.
+2023-12-15 13:11:57.073 -05:00 [DBG] Connection id "0HMVTJ597M42P" started.
+2023-12-15 13:11:57.219 -05:00 [DBG] Connection 0HMVTJ597M42P established using the following protocol: "Tls12"
+2023-12-15 13:11:57.218 -05:00 [DBG] Connection 0HMVTJ597M42O established using the following protocol: "Tls12"
+2023-12-15 13:11:57.317 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-15 13:11:57.320 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-15 13:11:57.631 -05:00 [DBG] Connection id "0HMVTJ597M42O" completed keep alive response.
+2023-12-15 13:11:57.634 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 320.6010ms
+2023-12-15 13:11:58.120 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-15 13:11:58.357 -05:00 [DBG] Connection id "0HMVTJ597M42O" completed keep alive response.
+2023-12-15 13:11:58.357 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 237.4615ms
+2023-12-15 13:13:58.154 -05:00 [DBG] Connection id "0HMVTJ597M42P" received FIN.
+2023-12-15 13:13:58.230 -05:00 [DBG] Connection id "0HMVTJ597M42P" sending FIN because: "The client closed the connection."
+2023-12-15 13:13:58.231 -05:00 [DBG] Connection id "0HMVTJ597M42P" disconnecting.
+2023-12-15 13:13:58.233 -05:00 [DBG] Connection id "0HMVTJ597M42P" stopped.
+2023-12-15 13:17:23.828 -05:00 [DBG] Connection id "0HMVTJ597M42O" received FIN.
+2023-12-15 13:17:23.981 -05:00 [DBG] Connection id "0HMVTJ597M42O" sending FIN because: "The client closed the connection."
+2023-12-15 13:17:23.983 -05:00 [DBG] Connection id "0HMVTJ597M42O" disconnecting.
+2023-12-15 13:17:23.985 -05:00 [DBG] Connection id "0HMVTJ597M42O" stopped.
+2023-12-15 13:17:26.355 -05:00 [DBG] Connection id "0HMVTJ597M42Q" accepted.
+2023-12-15 13:17:26.355 -05:00 [DBG] Connection id "0HMVTJ597M42Q" started.
+2023-12-15 13:17:26.388 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-15 13:17:26.401 -05:00 [DBG] The request path  does not match the path filter
+2023-12-15 13:17:26.412 -05:00 [DBG] Https port '7235' discovered from server endpoints.
+2023-12-15 13:17:26.421 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-15 13:17:26.423 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 34.3036ms
+2023-12-15 13:17:26.423 -05:00 [DBG] Connection id "0HMVTJ597M42Q" disconnecting.
+2023-12-15 13:17:26.423 -05:00 [DBG] Connection id "0HMVTJ597M42Q" stopped.
+2023-12-15 13:17:26.423 -05:00 [DBG] Connection id "0HMVTJ597M42Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 13:17:26.451 -05:00 [DBG] Connection id "0HMVTJ597M42R" accepted.
+2023-12-15 13:17:26.451 -05:00 [DBG] Connection id "0HMVTJ597M42R" started.
+2023-12-15 13:17:26.468 -05:00 [DBG] Connection 0HMVTJ597M42R established using the following protocol: "Tls12"
+2023-12-15 13:17:26.468 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-15 13:17:26.469 -05:00 [DBG] The request path  does not match the path filter
+2023-12-15 13:17:26.522 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-15 13:17:26.526 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-15 13:17:26.528 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-15 13:17:26.532 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:17:26.533 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:17:26.723 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:17:26.729 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-15 13:17:26.733 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-15 13:17:26.734 -05:00 [DBG] Connection id "0HMVTJ597M42R" completed keep alive response.
+2023-12-15 13:17:26.734 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 265.2997ms
+2023-12-15 13:17:33.949 -05:00 [DBG] Connection id "0HMVTJ597M42S" accepted.
+2023-12-15 13:17:33.950 -05:00 [DBG] Connection id "0HMVTJ597M42S" started.
+2023-12-15 13:17:33.963 -05:00 [DBG] Connection 0HMVTJ597M42S established using the following protocol: "Tls12"
+2023-12-15 13:17:33.964 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:17:33.964 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:17:33.966 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:17:33.966 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:17:33.966 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:17:33.966 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:17:33.967 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:17:33.967 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:17:33.969 -05:00 [DBG] Connection id "0HMVTJ597M42S" completed keep alive response.
+2023-12-15 13:17:33.969 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 4.6319ms
+2023-12-15 13:17:33.970 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:17:33.970 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:17:33.971 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:17:33.971 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:17:33.971 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:17:33.972 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:17:33.972 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:17:33.974 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:17:33.975 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:17:34.022 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:17:34.024 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:17:34.024 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:17:34.024 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:17:34.024 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:17:34.024 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:17:34.026 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:17:34.099 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:17:34.106 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:17:34.108 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:17:34.109 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:17:34.109 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:17:34.115 -05:00 [DBG] Connection id "0HMVTJ597M42S", Request id "0HMVTJ597M42S:00000002": started reading request body.
+2023-12-15 13:17:34.115 -05:00 [DBG] Connection id "0HMVTJ597M42S", Request id "0HMVTJ597M42S:00000002": done reading request body.
+2023-12-15 13:17:34.234 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:17:34.234 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:17:34.234 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:17:34.245 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:17:34.941 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 914.2894ms
+2023-12-15 13:17:34.944 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:17:34.949 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.SqlServerDbContextOptionsExtensions.UseSqlServer(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 sqlServerOptionsAction)
+   at Plants.info.API.Data.Contexts.UserContext.OnConfiguring(DbContextOptionsBuilder optionsBuilder) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Persistence/Data/Contexts/UserContext.cs:line 36
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at Plants.info.API.Data.Repository.UserRepository.FindUserByEmailAsync(String email) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Persistence/Data/Repositories/UserRepository.cs:line 38
+   at Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate(GoogleAuthenticateRequestBody requestBody) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API/Controllers/AuthenticationController.cs:line 88
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-15 13:17:34.982 -05:00 [DBG] Connection id "0HMVTJ597M42S" completed keep alive response.
+2023-12-15 13:17:34.983 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 500 - text/plain;+charset=utf-8 1013.6902ms
+2023-12-15 13:18:21.544 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:18:21.545 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:18:21.545 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:18:21.545 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:18:21.545 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:18:21.545 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:18:21.545 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:18:21.545 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:18:21.545 -05:00 [DBG] Connection id "0HMVTJ597M42S" completed keep alive response.
+2023-12-15 13:18:21.545 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 1.1718ms
+2023-12-15 13:18:21.591 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:18:21.594 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:18:21.597 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:18:21.597 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:18:21.597 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:18:21.597 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:18:21.597 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:18:21.599 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:18:21.599 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:18:21.599 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:18:21.599 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:18:21.599 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:18:21.599 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:18:21.600 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:18:21.600 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:18:21.600 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:18:21.605 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:18:21.605 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:18:21.606 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:18:21.606 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:18:21.606 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:18:21.606 -05:00 [DBG] Connection id "0HMVTJ597M42S", Request id "0HMVTJ597M42S:00000004": started reading request body.
+2023-12-15 13:18:21.606 -05:00 [DBG] Connection id "0HMVTJ597M42S", Request id "0HMVTJ597M42S:00000004": done reading request body.
+2023-12-15 13:18:21.607 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:18:21.607 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:18:21.607 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:18:21.607 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:18:35.172 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 13572.7026ms
+2023-12-15 13:18:35.178 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:18:35.185 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.SqlServerDbContextOptionsExtensions.UseSqlServer(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 sqlServerOptionsAction)
+   at Plants.info.API.Data.Contexts.UserContext.OnConfiguring(DbContextOptionsBuilder optionsBuilder) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Persistence/Data/Contexts/UserContext.cs:line 36
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at Plants.info.API.Data.Repository.UserRepository.FindUserByEmailAsync(String email) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Persistence/Data/Repositories/UserRepository.cs:line 38
+   at Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate(GoogleAuthenticateRequestBody requestBody) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API/Controllers/AuthenticationController.cs:line 88
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-15 13:18:35.189 -05:00 [DBG] Connection id "0HMVTJ597M42S" completed keep alive response.
+2023-12-15 13:18:35.189 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 500 - text/plain;+charset=utf-8 13598.4530ms
+2023-12-15 13:19:19.204 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:19:19.205 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:19:19.205 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:19:19.205 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:19:19.205 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:19:19.205 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:19:19.205 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:19:19.205 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:19:19.205 -05:00 [DBG] Connection id "0HMVTJ597M42S" completed keep alive response.
+2023-12-15 13:19:19.205 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 0.9513ms
+2023-12-15 13:19:19.233 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:19:19.233 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:19:19.233 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:19:19.233 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:19:19.233 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:19:19.233 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:19:19.233 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:19:19.233 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:19:19.233 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:19:19.234 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:19:19.234 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:19:19.234 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:19:19.234 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:19:19.234 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:19:19.234 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:19:19.234 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:19:19.239 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:19:19.239 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:19:19.239 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:19:19.239 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:19:19.239 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:19:19.240 -05:00 [DBG] Connection id "0HMVTJ597M42S", Request id "0HMVTJ597M42S:00000006": started reading request body.
+2023-12-15 13:19:19.240 -05:00 [DBG] Connection id "0HMVTJ597M42S", Request id "0HMVTJ597M42S:00000006": done reading request body.
+2023-12-15 13:19:19.240 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:19:19.240 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:19:19.240 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:19:19.240 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:20:02.572 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 43337.9306ms
+2023-12-15 13:20:02.578 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:20:02.587 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.SqlServerDbContextOptionsExtensions.UseSqlServer(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 sqlServerOptionsAction)
+   at Plants.info.API.Data.Contexts.UserContext.OnConfiguring(DbContextOptionsBuilder optionsBuilder) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Persistence/Data/Contexts/UserContext.cs:line 36
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at Plants.info.API.Data.Repository.UserRepository.FindUserByEmailAsync(String email) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Persistence/Data/Repositories/UserRepository.cs:line 38
+   at Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate(GoogleAuthenticateRequestBody requestBody) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API/Controllers/AuthenticationController.cs:line 88
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-15 13:20:02.589 -05:00 [DBG] Connection id "0HMVTJ597M42S" completed keep alive response.
+2023-12-15 13:20:02.614 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 500 - text/plain;+charset=utf-8 43356.6472ms
+2023-12-15 13:21:37.430 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:21:37.431 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:21:37.431 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:21:37.431 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:21:37.431 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:21:37.431 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:21:37.431 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:21:37.431 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:21:37.431 -05:00 [DBG] Connection id "0HMVTJ597M42S" completed keep alive response.
+2023-12-15 13:21:37.431 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 1.4951ms
+2023-12-15 13:21:37.479 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:21:37.479 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:21:37.479 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:21:37.479 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:21:37.479 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:21:37.479 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:21:37.479 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:21:37.479 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:21:37.479 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:21:37.480 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:21:37.480 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:21:37.480 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:21:37.480 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:21:37.480 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:21:37.480 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:21:37.480 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:21:37.480 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:21:37.480 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:21:37.480 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:21:37.480 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:21:37.480 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:21:37.480 -05:00 [DBG] Connection id "0HMVTJ597M42S", Request id "0HMVTJ597M42S:00000008": started reading request body.
+2023-12-15 13:21:37.480 -05:00 [DBG] Connection id "0HMVTJ597M42S", Request id "0HMVTJ597M42S:00000008": done reading request body.
+2023-12-15 13:21:37.481 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:21:37.481 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:21:37.481 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:21:37.481 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:24:25.748 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-15 13:24:25.992 -05:00 [DBG] Hosting starting
+2023-12-15 13:24:26.030 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-15 13:24:26.037 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-15 13:24:26.044 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-15 13:24:26.044 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-15 13:24:26.045 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-15 13:24:26.051 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-15 13:24:26.056 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-15 13:24:26.056 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-15 13:24:26.056 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-15 13:24:26.064 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-15 13:24:26.065 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-15 13:24:26.078 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-15 13:24:26.078 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-15 13:24:26.082 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-15 13:24:26.083 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-15 13:24:26.826 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-15 13:24:26.826 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-15 13:24:26.827 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-15 13:24:26.827 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 13:24:26.827 -05:00 [INF] Hosting environment: Development
+2023-12-15 13:24:26.827 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-15 13:24:26.827 -05:00 [DBG] Hosting started
+2023-12-15 13:24:26.865 -05:00 [DBG] Connection id "0HMVTJC91ODNH" accepted.
+2023-12-15 13:24:26.866 -05:00 [DBG] Connection id "0HMVTJC91ODNH" started.
+2023-12-15 13:24:27.849 -05:00 [DBG] Connection id "0HMVTJC91ODNH" received FIN.
+2023-12-15 13:24:27.858 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-15 13:24:27.945 -05:00 [DBG] Connection id "0HMVTJC91ODNH" stopped.
+2023-12-15 13:24:27.951 -05:00 [DBG] Connection id "0HMVTJC91ODNH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 13:24:28.054 -05:00 [DBG] Connection id "0HMVTJC91ODNI" accepted.
+2023-12-15 13:24:28.054 -05:00 [DBG] Connection id "0HMVTJC91ODNI" started.
+2023-12-15 13:24:28.074 -05:00 [DBG] Connection id "0HMVTJC91ODNJ" accepted.
+2023-12-15 13:24:28.075 -05:00 [DBG] Connection id "0HMVTJC91ODNJ" started.
+2023-12-15 13:24:28.173 -05:00 [DBG] Connection 0HMVTJC91ODNI established using the following protocol: "Tls12"
+2023-12-15 13:24:28.236 -05:00 [DBG] Connection 0HMVTJC91ODNJ established using the following protocol: "Tls12"
+2023-12-15 13:24:28.297 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-15 13:24:28.298 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-15 13:24:28.543 -05:00 [DBG] Connection id "0HMVTJC91ODNI" completed keep alive response.
+2023-12-15 13:24:28.546 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 251.1017ms
+2023-12-15 13:24:29.039 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-15 13:24:29.483 -05:00 [DBG] Connection id "0HMVTJC91ODNI" completed keep alive response.
+2023-12-15 13:24:29.484 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 445.3440ms
+2023-12-15 13:25:15.264 -05:00 [DBG] Connection id "0HMVTJC91ODNK" accepted.
+2023-12-15 13:25:15.265 -05:00 [DBG] Connection id "0HMVTJC91ODNK" started.
+2023-12-15 13:25:15.290 -05:00 [DBG] Connection 0HMVTJC91ODNK established using the following protocol: "Tls12"
+2023-12-15 13:25:15.348 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:25:15.353 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:25:15.389 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:25:15.392 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:25:15.393 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:25:15.396 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:25:15.396 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:25:15.398 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:25:15.400 -05:00 [DBG] Connection id "0HMVTJC91ODNK" completed keep alive response.
+2023-12-15 13:25:15.401 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 52.4878ms
+2023-12-15 13:25:15.408 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:25:15.408 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:25:15.410 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:25:15.410 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:25:15.410 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:25:15.410 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:25:15.411 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:25:15.532 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:25:15.535 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:25:15.572 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:25:15.574 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:25:15.575 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:25:15.575 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:25:15.575 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:25:15.576 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:25:15.577 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:25:15.659 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:25:15.664 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:25:15.666 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:25:15.667 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:25:15.667 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:25:15.673 -05:00 [DBG] Connection id "0HMVTJC91ODNK", Request id "0HMVTJC91ODNK:00000002": started reading request body.
+2023-12-15 13:25:15.674 -05:00 [DBG] Connection id "0HMVTJC91ODNK", Request id "0HMVTJC91ODNK:00000002": done reading request body.
+2023-12-15 13:25:15.798 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:25:15.798 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:25:15.798 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:25:15.807 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:25:36.099 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 20519.7359ms
+2023-12-15 13:25:36.111 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:25:36.116 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Method 'get_QueryProvider' in type 'Microsoft.EntityFrameworkCore.Storage.Internal.RelationalDatabaseFacadeDependencies' from assembly 'Microsoft.EntityFrameworkCore.Relational, Version=6.0.10.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' does not have an implementation.
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkRelationalServicesBuilder.TryAddCoreServices()
+   at Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions.AddEntityFrameworkSqlServer(IServiceCollection serviceCollection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension.ApplyServices(IServiceCollection services)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.ApplyServices(IDbContextOptions options, ServiceCollection services)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.<GetOrAdd>g__BuildServiceProvider|4_1(IDbContextOptions _, ValueTuple`2 arguments)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.<>c.<GetOrAdd>b__4_0(IDbContextOptions contextOptions, ValueTuple`2 tuples)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, Boolean providerRequired)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at Plants.info.API.Data.Repository.UserRepository.FindUserByEmailAsync(String email) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.info.API.Persistence/Data/Repositories/UserRepository.cs:line 38
+   at Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate(GoogleAuthenticateRequestBody requestBody) in /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API/Controllers/AuthenticationController.cs:line 88
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-15 13:25:36.147 -05:00 [DBG] Connection id "0HMVTJC91ODNK" completed keep alive response.
+2023-12-15 13:25:36.158 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 500 - text/plain;+charset=utf-8 20750.6223ms
+2023-12-15 13:25:58.123 -05:00 [DBG] Connection id "0HMVTJC91ODNJ" received FIN.
+2023-12-15 13:25:58.135 -05:00 [DBG] Connection id "0HMVTJC91ODNJ" sending FIN because: "The client closed the connection."
+2023-12-15 13:25:58.135 -05:00 [DBG] Connection id "0HMVTJC91ODNJ" disconnecting.
+2023-12-15 13:25:58.142 -05:00 [DBG] Connection id "0HMVTJC91ODNJ" stopped.
+2023-12-15 13:30:13.830 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-15 13:30:14.038 -05:00 [DBG] Hosting starting
+2023-12-15 13:30:14.073 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-15 13:30:14.078 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-15 13:30:14.085 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-15 13:30:14.086 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-15 13:30:14.087 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-15 13:30:14.092 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-15 13:30:14.096 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-15 13:30:14.096 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-15 13:30:14.097 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-15 13:30:14.103 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-15 13:30:14.105 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-15 13:30:14.117 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-15 13:30:14.118 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-15 13:30:14.121 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-15 13:30:14.122 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-15 13:30:15.006 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-15 13:30:15.006 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-15 13:30:15.006 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-15 13:30:15.007 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 13:30:15.007 -05:00 [INF] Hosting environment: Development
+2023-12-15 13:30:15.007 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-15 13:30:15.007 -05:00 [DBG] Hosting started
+2023-12-15 13:30:15.050 -05:00 [DBG] Connection id "0HMVTJFGQ9T6B" accepted.
+2023-12-15 13:30:15.051 -05:00 [DBG] Connection id "0HMVTJFGQ9T6B" started.
+2023-12-15 13:30:16.012 -05:00 [DBG] Connection id "0HMVTJFGQ9T6B" received FIN.
+2023-12-15 13:30:16.020 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-15 13:30:16.136 -05:00 [DBG] Connection id "0HMVTJFGQ9T6B" stopped.
+2023-12-15 13:30:16.144 -05:00 [DBG] Connection id "0HMVTJFGQ9T6B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 13:30:16.351 -05:00 [DBG] Connection id "0HMVTJFGQ9T6C" accepted.
+2023-12-15 13:30:16.352 -05:00 [DBG] Connection id "0HMVTJFGQ9T6C" started.
+2023-12-15 13:30:16.361 -05:00 [DBG] Connection id "0HMVTJFGQ9T6D" accepted.
+2023-12-15 13:30:16.361 -05:00 [DBG] Connection id "0HMVTJFGQ9T6D" started.
+2023-12-15 13:30:16.461 -05:00 [DBG] Connection 0HMVTJFGQ9T6D established using the following protocol: "Tls12"
+2023-12-15 13:30:16.488 -05:00 [DBG] Connection 0HMVTJFGQ9T6C established using the following protocol: "Tls12"
+2023-12-15 13:30:16.573 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-15 13:30:16.575 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-15 13:30:16.886 -05:00 [DBG] Connection id "0HMVTJFGQ9T6D" completed keep alive response.
+2023-12-15 13:30:16.892 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 320.2105ms
+2023-12-15 13:30:17.418 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-15 13:30:17.643 -05:00 [DBG] Connection id "0HMVTJFGQ9T6D" completed keep alive response.
+2023-12-15 13:30:17.643 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 225.3112ms
+2023-12-15 13:31:22.586 -05:00 [DBG] Connection id "0HMVTJFGQ9T6C" received FIN.
+2023-12-15 13:31:22.602 -05:00 [DBG] Connection id "0HMVTJFGQ9T6C" sending FIN because: "The client closed the connection."
+2023-12-15 13:31:22.602 -05:00 [DBG] Connection id "0HMVTJFGQ9T6C" disconnecting.
+2023-12-15 13:31:22.609 -05:00 [DBG] Connection id "0HMVTJFGQ9T6C" stopped.
+2023-12-15 13:31:28.989 -05:00 [DBG] Connection id "0HMVTJFGQ9T6E" accepted.
+2023-12-15 13:31:28.990 -05:00 [DBG] Connection id "0HMVTJFGQ9T6E" started.
+2023-12-15 13:31:29.084 -05:00 [DBG] Connection 0HMVTJFGQ9T6E established using the following protocol: "Tls12"
+2023-12-15 13:31:29.085 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:31:29.088 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:31:29.116 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:31:29.118 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:31:29.119 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:31:29.122 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:31:29.122 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:31:29.123 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:31:29.125 -05:00 [DBG] Connection id "0HMVTJFGQ9T6E" completed keep alive response.
+2023-12-15 13:31:29.125 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 39.9952ms
+2023-12-15 13:31:29.126 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:31:29.127 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:31:29.128 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:31:29.128 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:31:29.128 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:31:29.129 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:31:29.129 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:31:29.235 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:31:29.237 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:31:29.266 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:31:29.267 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:31:29.268 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:31:29.268 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:31:29.268 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:31:29.268 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:31:29.270 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:31:29.336 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:31:29.340 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:31:29.341 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:31:29.342 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:31:29.342 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:31:29.347 -05:00 [DBG] Connection id "0HMVTJFGQ9T6E", Request id "0HMVTJFGQ9T6E:00000002": started reading request body.
+2023-12-15 13:31:29.347 -05:00 [DBG] Connection id "0HMVTJFGQ9T6E", Request id "0HMVTJFGQ9T6E:00000002": done reading request body.
+2023-12-15 13:31:29.461 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:31:29.461 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:31:29.462 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:31:29.469 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:37:02.421 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-15 13:37:02.639 -05:00 [DBG] Hosting starting
+2023-12-15 13:37:02.670 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-15 13:37:02.674 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-15 13:37:02.680 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-15 13:37:02.681 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-15 13:37:02.682 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-15 13:37:02.687 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-15 13:37:02.690 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-15 13:37:02.690 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-15 13:37:02.690 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-15 13:37:02.696 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-15 13:37:02.698 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-15 13:37:02.709 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-15 13:37:02.709 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-15 13:37:02.713 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-15 13:37:02.713 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-15 13:37:03.350 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-15 13:37:03.350 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-15 13:37:03.350 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-15 13:37:03.351 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 13:37:03.351 -05:00 [INF] Hosting environment: Development
+2023-12-15 13:37:03.351 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-15 13:37:03.351 -05:00 [DBG] Hosting started
+2023-12-15 13:37:03.391 -05:00 [DBG] Connection id "0HMVTJJAGHQ3B" accepted.
+2023-12-15 13:37:03.392 -05:00 [DBG] Connection id "0HMVTJJAGHQ3B" started.
+2023-12-15 13:37:04.341 -05:00 [DBG] Connection id "0HMVTJJAGHQ3B" received FIN.
+2023-12-15 13:37:04.350 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-15 13:37:04.428 -05:00 [DBG] Connection id "0HMVTJJAGHQ3B" stopped.
+2023-12-15 13:37:04.433 -05:00 [DBG] Connection id "0HMVTJJAGHQ3B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 13:37:04.574 -05:00 [DBG] Connection id "0HMVTJJAGHQ3C" accepted.
+2023-12-15 13:37:04.576 -05:00 [DBG] Connection id "0HMVTJJAGHQ3C" started.
+2023-12-15 13:37:04.578 -05:00 [DBG] Connection id "0HMVTJJAGHQ3D" accepted.
+2023-12-15 13:37:04.578 -05:00 [DBG] Connection id "0HMVTJJAGHQ3D" started.
+2023-12-15 13:37:04.753 -05:00 [DBG] Connection 0HMVTJJAGHQ3D established using the following protocol: "Tls12"
+2023-12-15 13:37:04.753 -05:00 [DBG] Connection 0HMVTJJAGHQ3C established using the following protocol: "Tls12"
+2023-12-15 13:37:04.819 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-15 13:37:04.822 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-15 13:37:05.241 -05:00 [DBG] Connection id "0HMVTJJAGHQ3C" completed keep alive response.
+2023-12-15 13:37:05.244 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 426.8025ms
+2023-12-15 13:37:05.787 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-15 13:37:06.015 -05:00 [DBG] Connection id "0HMVTJJAGHQ3C" completed keep alive response.
+2023-12-15 13:37:06.017 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 229.5744ms
+2023-12-15 13:37:21.265 -05:00 [DBG] Connection id "0HMVTJJAGHQ3E" accepted.
+2023-12-15 13:37:21.265 -05:00 [DBG] Connection id "0HMVTJJAGHQ3E" started.
+2023-12-15 13:37:21.279 -05:00 [DBG] Connection 0HMVTJJAGHQ3E established using the following protocol: "Tls12"
+2023-12-15 13:37:21.281 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:37:21.283 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:37:21.309 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:37:21.311 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:37:21.312 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:37:21.315 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:37:21.316 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:37:21.317 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:37:21.319 -05:00 [DBG] Connection id "0HMVTJJAGHQ3E" completed keep alive response.
+2023-12-15 13:37:21.319 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 38.4499ms
+2023-12-15 13:37:21.345 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:37:21.345 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:37:21.347 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:37:21.348 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:37:21.348 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:37:21.348 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:37:21.348 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:37:21.456 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:37:21.458 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:37:21.487 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:37:21.488 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:37:21.488 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:37:21.488 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:37:21.489 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:37:21.489 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:37:21.490 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:37:21.553 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:37:21.557 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:37:21.558 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:37:21.559 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:37:21.559 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:37:21.564 -05:00 [DBG] Connection id "0HMVTJJAGHQ3E", Request id "0HMVTJJAGHQ3E:00000002": started reading request body.
+2023-12-15 13:37:21.564 -05:00 [DBG] Connection id "0HMVTJJAGHQ3E", Request id "0HMVTJJAGHQ3E:00000002": done reading request body.
+2023-12-15 13:37:21.669 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:37:21.669 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:37:21.669 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:37:21.677 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:46:25.421 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-15 13:46:25.630 -05:00 [DBG] Hosting starting
+2023-12-15 13:46:25.662 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-15 13:46:25.666 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-15 13:46:25.673 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-15 13:46:25.674 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-15 13:46:25.675 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-15 13:46:25.679 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-15 13:46:25.683 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-15 13:46:25.683 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-15 13:46:25.683 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-15 13:46:25.689 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-15 13:46:25.690 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-15 13:46:25.701 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-15 13:46:25.701 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-15 13:46:25.705 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-15 13:46:25.705 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-15 13:46:26.374 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-15 13:46:26.374 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-15 13:46:26.374 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-15 13:46:26.375 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 13:46:26.375 -05:00 [INF] Hosting environment: Development
+2023-12-15 13:46:26.375 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-15 13:46:26.375 -05:00 [DBG] Hosting started
+2023-12-15 13:46:26.397 -05:00 [DBG] Connection id "0HMVTJOI9PEOT" accepted.
+2023-12-15 13:46:26.398 -05:00 [DBG] Connection id "0HMVTJOI9PEOT" started.
+2023-12-15 13:46:27.391 -05:00 [DBG] Connection id "0HMVTJOI9PEOT" received FIN.
+2023-12-15 13:46:27.399 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-15 13:46:27.482 -05:00 [DBG] Connection id "0HMVTJOI9PEOT" stopped.
+2023-12-15 13:46:27.488 -05:00 [DBG] Connection id "0HMVTJOI9PEOT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 13:46:27.584 -05:00 [DBG] Connection id "0HMVTJOI9PEOU" accepted.
+2023-12-15 13:46:27.584 -05:00 [DBG] Connection id "0HMVTJOI9PEOU" started.
+2023-12-15 13:46:27.587 -05:00 [DBG] Connection id "0HMVTJOI9PEOV" accepted.
+2023-12-15 13:46:27.588 -05:00 [DBG] Connection id "0HMVTJOI9PEOV" started.
+2023-12-15 13:46:27.697 -05:00 [DBG] Connection 0HMVTJOI9PEOU established using the following protocol: "Tls12"
+2023-12-15 13:46:27.697 -05:00 [DBG] Connection 0HMVTJOI9PEOV established using the following protocol: "Tls12"
+2023-12-15 13:46:27.796 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-15 13:46:27.798 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-15 13:46:28.095 -05:00 [DBG] Connection id "0HMVTJOI9PEOV" completed keep alive response.
+2023-12-15 13:46:28.097 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 303.0845ms
+2023-12-15 13:46:28.866 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-15 13:46:29.183 -05:00 [DBG] Connection id "0HMVTJOI9PEOV" completed keep alive response.
+2023-12-15 13:46:29.210 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 341.2745ms
+2023-12-15 13:47:30.544 -05:00 [DBG] Connection id "0HMVTJOI9PEOU" received FIN.
+2023-12-15 13:47:30.580 -05:00 [DBG] Connection id "0HMVTJOI9PEOU" sending FIN because: "The client closed the connection."
+2023-12-15 13:47:30.581 -05:00 [DBG] Connection id "0HMVTJOI9PEOU" disconnecting.
+2023-12-15 13:47:30.591 -05:00 [DBG] Connection id "0HMVTJOI9PEOU" stopped.
+2023-12-15 13:47:36.569 -05:00 [DBG] Connection id "0HMVTJOI9PEP0" accepted.
+2023-12-15 13:47:36.570 -05:00 [DBG] Connection id "0HMVTJOI9PEP0" started.
+2023-12-15 13:47:36.634 -05:00 [DBG] Connection 0HMVTJOI9PEP0 established using the following protocol: "Tls12"
+2023-12-15 13:47:36.635 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:47:36.640 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:47:36.678 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:47:36.680 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:47:36.682 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:47:36.685 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:47:36.686 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:47:36.687 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:47:36.689 -05:00 [DBG] Connection id "0HMVTJOI9PEP0" completed keep alive response.
+2023-12-15 13:47:36.689 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 54.2352ms
+2023-12-15 13:47:36.696 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:47:36.696 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:47:36.698 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:47:36.698 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:47:36.698 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:47:36.699 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:47:36.699 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:47:36.822 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:47:36.825 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:47:36.871 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:47:36.872 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:47:36.872 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:47:36.872 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:47:36.873 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:47:36.873 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:47:36.874 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:47:36.944 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:47:36.950 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:47:36.952 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:47:36.953 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:47:36.953 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:47:36.960 -05:00 [DBG] Connection id "0HMVTJOI9PEP0", Request id "0HMVTJOI9PEP0:00000002": started reading request body.
+2023-12-15 13:47:36.960 -05:00 [DBG] Connection id "0HMVTJOI9PEP0", Request id "0HMVTJOI9PEP0:00000002": done reading request body.
+2023-12-15 13:47:37.075 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:47:37.075 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:47:37.075 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:47:37.085 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:49:17.475 -05:00 [FTL] Exception while retrieving token
+2023-12-15 13:55:09.143 -05:00 [DBG] Connection id "0HMVTJOI9PEOV" reset.
+2023-12-15 13:55:09.147 -05:00 [DBG] Connection id "0HMVTJOI9PEOV" sending FIN because: "The client closed the connection."
+2023-12-15 13:55:09.148 -05:00 [DBG] Connection id "0HMVTJOI9PEOV" disconnecting.
+2023-12-15 13:55:09.148 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-12-15 13:55:09.151 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-12-15 13:55:09.152 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-15 13:55:09.152 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-15 13:55:09.153 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-12-15 13:55:09.154 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-12-15 13:55:09.154 -05:00 [DBG] Connection id "0HMVTJOI9PEOV" stopped.
+2023-12-15 13:55:09.163 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 452237.404ms
+2023-12-15 13:55:09.164 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:55:09.167 -05:00 [DBG] Connection id "0HMVTJOI9PEP0" completed keep alive response.
+2023-12-15 13:55:09.178 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 500 - text/plain;+charset=utf-8 452432.7859ms
+2023-12-15 13:55:19.964 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:55:19.968 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:55:19.970 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:55:19.970 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:55:19.971 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:55:19.974 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:55:19.974 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:55:19.974 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:55:19.975 -05:00 [DBG] Connection id "0HMVTJOI9PEP0" completed keep alive response.
+2023-12-15 13:55:19.975 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 10.8302ms
+2023-12-15 13:55:19.977 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:55:19.977 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:55:19.977 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:55:19.977 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:55:19.977 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:55:19.977 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:55:19.977 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:55:19.981 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:55:19.981 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:55:19.982 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:55:19.983 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:55:19.983 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:55:19.983 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:55:19.983 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:55:19.983 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:55:19.983 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:55:19.989 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:55:19.990 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:55:19.991 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:55:19.991 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:55:19.992 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:55:19.992 -05:00 [DBG] Connection id "0HMVTJOI9PEP0", Request id "0HMVTJOI9PEP0:00000004": started reading request body.
+2023-12-15 13:55:19.993 -05:00 [DBG] Connection id "0HMVTJOI9PEP0", Request id "0HMVTJOI9PEP0:00000004": done reading request body.
+2023-12-15 13:55:19.993 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:55:19.993 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:55:19.993 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:55:19.994 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:57:00.828 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-15 13:57:01.019 -05:00 [DBG] Hosting starting
+2023-12-15 13:57:01.049 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-15 13:57:01.054 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-15 13:57:01.060 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-15 13:57:01.061 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-15 13:57:01.062 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-15 13:57:01.067 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-15 13:57:01.071 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-15 13:57:01.071 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-15 13:57:01.071 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-15 13:57:01.077 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-15 13:57:01.078 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-15 13:57:01.089 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-15 13:57:01.090 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-15 13:57:01.093 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-15 13:57:01.094 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-15 13:57:01.842 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-15 13:57:01.842 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-15 13:57:01.842 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-15 13:57:01.842 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 13:57:01.842 -05:00 [INF] Hosting environment: Development
+2023-12-15 13:57:01.843 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-15 13:57:01.843 -05:00 [DBG] Hosting started
+2023-12-15 13:57:01.875 -05:00 [DBG] Connection id "0HMVTJUFM5STH" accepted.
+2023-12-15 13:57:01.875 -05:00 [DBG] Connection id "0HMVTJUFM5STH" started.
+2023-12-15 13:57:02.868 -05:00 [DBG] Connection id "0HMVTJUFM5STH" received FIN.
+2023-12-15 13:57:02.875 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-15 13:57:02.957 -05:00 [DBG] Connection id "0HMVTJUFM5STH" stopped.
+2023-12-15 13:57:02.964 -05:00 [DBG] Connection id "0HMVTJUFM5STH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 13:57:03.024 -05:00 [DBG] Connection id "0HMVTJUFM5STI" accepted.
+2023-12-15 13:57:03.024 -05:00 [DBG] Connection id "0HMVTJUFM5STI" started.
+2023-12-15 13:57:03.103 -05:00 [DBG] Connection id "0HMVTJUFM5STJ" accepted.
+2023-12-15 13:57:03.124 -05:00 [DBG] Connection id "0HMVTJUFM5STJ" started.
+2023-12-15 13:57:03.259 -05:00 [DBG] Connection 0HMVTJUFM5STJ established using the following protocol: "Tls12"
+2023-12-15 13:57:03.259 -05:00 [DBG] Connection 0HMVTJUFM5STI established using the following protocol: "Tls12"
+2023-12-15 13:57:03.309 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-15 13:57:03.311 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-15 13:57:03.428 -05:00 [DBG] Connection id "0HMVTJUFM5STI" completed keep alive response.
+2023-12-15 13:57:03.431 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 123.1494ms
+2023-12-15 13:57:04.294 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-15 13:57:04.658 -05:00 [DBG] Connection id "0HMVTJUFM5STI" completed keep alive response.
+2023-12-15 13:57:04.658 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 364.5192ms
+2023-12-15 13:58:11.956 -05:00 [DBG] Connection id "0HMVTJUFM5STJ" received FIN.
+2023-12-15 13:58:11.976 -05:00 [DBG] Connection id "0HMVTJUFM5STJ" sending FIN because: "The client closed the connection."
+2023-12-15 13:58:11.982 -05:00 [DBG] Connection id "0HMVTJUFM5STJ" disconnecting.
+2023-12-15 13:58:11.983 -05:00 [DBG] Connection id "0HMVTJUFM5STJ" stopped.
+2023-12-15 13:59:18.841 -05:00 [DBG] Connection id "0HMVTJUFM5STK" accepted.
+2023-12-15 13:59:18.865 -05:00 [DBG] Connection id "0HMVTJUFM5STK" started.
+2023-12-15 13:59:18.935 -05:00 [DBG] Connection 0HMVTJUFM5STK established using the following protocol: "Tls12"
+2023-12-15 13:59:18.937 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-15 13:59:18.943 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-15 13:59:18.990 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:59:18.992 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:59:18.994 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:59:18.998 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:59:18.998 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:59:19.000 -05:00 [DBG] The request is a preflight request.
+2023-12-15 13:59:19.002 -05:00 [DBG] Connection id "0HMVTJUFM5STK" completed keep alive response.
+2023-12-15 13:59:19.002 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 65.4604ms
+2023-12-15 13:59:19.080 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-15 13:59:19.081 -05:00 [DBG] POST requests are not supported
+2023-12-15 13:59:19.083 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:59:19.083 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-15 13:59:19.083 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:59:19.083 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:59:19.083 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:59:19.205 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:59:19.210 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:59:19.258 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-15 13:59:19.260 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-15 13:59:19.261 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-15 13:59:19.261 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-15 13:59:19.261 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-15 13:59:19.261 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-15 13:59:19.263 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:59:19.336 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-15 13:59:19.342 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:59:19.344 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-15 13:59:19.345 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-15 13:59:19.345 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-15 13:59:19.352 -05:00 [DBG] Connection id "0HMVTJUFM5STK", Request id "0HMVTJUFM5STK:00000002": started reading request body.
+2023-12-15 13:59:19.352 -05:00 [DBG] Connection id "0HMVTJUFM5STK", Request id "0HMVTJUFM5STK:00000002": done reading request body.
+2023-12-15 13:59:19.459 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:59:19.459 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:59:19.459 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-15 13:59:19.470 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-15 13:59:57.643 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-12-15 13:59:57.645 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-12-15 13:59:57.646 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-15 13:59:57.646 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-15 13:59:57.647 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-15 13:59:57.647 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Data.Models.Authentication.AuthResponseBody'.
+2023-12-15 13:59:57.690 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 38425.5092ms
+2023-12-15 13:59:57.691 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-15 13:59:57.693 -05:00 [DBG] Connection id "0HMVTJUFM5STK" completed keep alive response.
+2023-12-15 13:59:57.699 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 200 473 application/json;+charset=utf-8 38618.5013ms
+2023-12-15 13:59:58.924 -05:00 [DBG] Connection id "0HMVTJUFM5STL" accepted.
+2023-12-15 13:59:58.924 -05:00 [DBG] Connection id "0HMVTJUFM5STL" started.
+2023-12-15 13:59:58.973 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-15 13:59:58.977 -05:00 [DBG] The request path  does not match the path filter
+2023-12-15 13:59:58.981 -05:00 [DBG] Https port '7235' discovered from server endpoints.
+2023-12-15 13:59:58.984 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-15 13:59:58.985 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 11.6438ms
+2023-12-15 13:59:58.985 -05:00 [DBG] Connection id "0HMVTJUFM5STL" disconnecting.
+2023-12-15 13:59:58.985 -05:00 [DBG] Connection id "0HMVTJUFM5STL" stopped.
+2023-12-15 13:59:58.985 -05:00 [DBG] Connection id "0HMVTJUFM5STL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 13:59:58.992 -05:00 [DBG] Connection id "0HMVTJUFM5STM" accepted.
+2023-12-15 13:59:58.992 -05:00 [DBG] Connection id "0HMVTJUFM5STM" started.
+2023-12-15 13:59:59.005 -05:00 [DBG] Connection 0HMVTJUFM5STM established using the following protocol: "Tls12"
+2023-12-15 13:59:59.028 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-15 13:59:59.028 -05:00 [DBG] The request path  does not match the path filter
+2023-12-15 13:59:59.029 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-15 13:59:59.029 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-15 13:59:59.029 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-15 13:59:59.030 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 13:59:59.030 -05:00 [INF] CORS policy execution successful.
+2023-12-15 13:59:59.031 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 13:59:59.038 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-15 13:59:59.043 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-15 13:59:59.044 -05:00 [DBG] Connection id "0HMVTJUFM5STM" completed keep alive response.
+2023-12-15 13:59:59.044 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 15.4490ms
+2023-12-15 14:02:26.227 -05:00 [DBG] Connection id "0HMVTJUFM5STI" received FIN.
+2023-12-15 14:02:26.288 -05:00 [DBG] Connection id "0HMVTJUFM5STI" disconnecting.
+2023-12-15 14:02:26.289 -05:00 [DBG] Connection id "0HMVTJUFM5STI" sending FIN because: "The client closed the connection."
+2023-12-15 14:02:26.291 -05:00 [DBG] Connection id "0HMVTJUFM5STI" stopped.
+2023-12-15 14:05:54.168 -05:00 [DBG] Connection id "0HMVTJUFM5STM" received FIN.
+2023-12-15 14:05:54.172 -05:00 [DBG] Connection id "0HMVTJUFM5STK" received FIN.
+2023-12-15 14:05:54.175 -05:00 [DBG] Connection id "0HMVTJUFM5STM" sending FIN because: "The client closed the connection."
+2023-12-15 14:05:54.175 -05:00 [DBG] Connection id "0HMVTJUFM5STM" disconnecting.
+2023-12-15 14:05:54.175 -05:00 [DBG] Connection id "0HMVTJUFM5STK" sending FIN because: "The client closed the connection."
+2023-12-15 14:05:54.175 -05:00 [DBG] Connection id "0HMVTJUFM5STK" disconnecting.
+2023-12-15 14:05:54.206 -05:00 [DBG] Connection id "0HMVTJUFM5STM" stopped.
+2023-12-15 14:05:54.209 -05:00 [DBG] Connection id "0HMVTJUFM5STK" stopped.
+2023-12-15 14:15:16.457 -05:00 [DBG] Connection id "0HMVTJUFM5STN" accepted.
+2023-12-15 14:15:16.458 -05:00 [DBG] Connection id "0HMVTJUFM5STN" started.
+2023-12-15 14:15:16.520 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-15 14:15:16.529 -05:00 [DBG] The request path  does not match the path filter
+2023-12-15 14:15:16.535 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-15 14:15:16.537 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 17.2347ms
+2023-12-15 14:15:16.537 -05:00 [DBG] Connection id "0HMVTJUFM5STN" disconnecting.
+2023-12-15 14:15:16.537 -05:00 [DBG] Connection id "0HMVTJUFM5STN" stopped.
+2023-12-15 14:15:16.537 -05:00 [DBG] Connection id "0HMVTJUFM5STN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-15 14:15:16.541 -05:00 [DBG] Connection id "0HMVTJUFM5STO" accepted.
+2023-12-15 14:15:16.541 -05:00 [DBG] Connection id "0HMVTJUFM5STO" started.
+2023-12-15 14:15:16.611 -05:00 [DBG] Connection 0HMVTJUFM5STO established using the following protocol: "Tls12"
+2023-12-15 14:15:16.612 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-15 14:15:16.613 -05:00 [DBG] The request path  does not match the path filter
+2023-12-15 14:15:16.614 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-15 14:15:16.615 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-15 14:15:16.615 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-15 14:15:16.616 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-15 14:15:16.617 -05:00 [INF] CORS policy execution successful.
+2023-12-15 14:15:16.627 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-15 14:15:16.633 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-15 14:15:16.635 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-15 14:15:16.636 -05:00 [DBG] Connection id "0HMVTJUFM5STO" completed keep alive response.
+2023-12-15 14:15:16.636 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 23.6518ms

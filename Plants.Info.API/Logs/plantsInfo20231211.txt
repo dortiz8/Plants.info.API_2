@@ -1,0 +1,1043 @@
+2023-12-11 16:35:47.076 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-11 16:35:47.304 -05:00 [DBG] Hosting starting
+2023-12-11 16:35:47.342 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-11 16:35:47.347 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-11 16:35:47.355 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-11 16:35:47.357 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-11 16:35:47.358 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-11 16:35:47.363 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-11 16:35:47.368 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-11 16:35:47.368 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-11 16:35:47.368 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-11 16:35:47.377 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-11 16:35:47.380 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-11 16:35:47.393 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-11 16:35:47.393 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-11 16:35:47.397 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-11 16:35:47.398 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-11 16:35:48.206 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-11 16:35:48.207 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-11 16:35:48.207 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-11 16:35:48.207 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 16:35:48.207 -05:00 [INF] Hosting environment: Development
+2023-12-11 16:35:48.207 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-11 16:35:48.208 -05:00 [DBG] Hosting started
+2023-12-11 16:35:48.236 -05:00 [DBG] Connection id "0HMVQI4HU6NDT" accepted.
+2023-12-11 16:35:48.238 -05:00 [DBG] Connection id "0HMVQI4HU6NDT" started.
+2023-12-11 16:35:49.224 -05:00 [DBG] Connection id "0HMVQI4HU6NDT" received FIN.
+2023-12-11 16:35:49.232 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-11 16:35:49.273 -05:00 [DBG] Connection id "0HMVQI4HU6NDT" stopped.
+2023-12-11 16:35:49.277 -05:00 [DBG] Connection id "0HMVQI4HU6NDT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 16:35:49.483 -05:00 [DBG] Connection id "0HMVQI4HU6NDU" accepted.
+2023-12-11 16:35:49.483 -05:00 [DBG] Connection id "0HMVQI4HU6NDU" started.
+2023-12-11 16:35:49.484 -05:00 [DBG] Connection id "0HMVQI4HU6NDV" accepted.
+2023-12-11 16:35:49.484 -05:00 [DBG] Connection id "0HMVQI4HU6NDV" started.
+2023-12-11 16:35:49.689 -05:00 [DBG] Connection 0HMVQI4HU6NDV established using the following protocol: "Tls12"
+2023-12-11 16:35:49.689 -05:00 [DBG] Connection 0HMVQI4HU6NDU established using the following protocol: "Tls12"
+2023-12-11 16:35:49.769 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-11 16:35:49.772 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-11 16:35:49.924 -05:00 [DBG] Connection id "0HMVQI4HU6NDV" completed keep alive response.
+2023-12-11 16:35:49.926 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 160.5294ms
+2023-12-11 16:35:49.939 -05:00 [DBG] Connection id "0HMVQI4HU6NE0" accepted.
+2023-12-11 16:35:49.939 -05:00 [DBG] Connection id "0HMVQI4HU6NE0" started.
+2023-12-11 16:35:49.941 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui-bundle.js - -
+2023-12-11 16:35:49.944 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui.css - -
+2023-12-11 16:35:50.054 -05:00 [DBG] Connection 0HMVQI4HU6NE0 established using the following protocol: "Tls12"
+2023-12-11 16:35:50.055 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui-standalone-preset.js - -
+2023-12-11 16:35:50.125 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-11 16:35:50.125 -05:00 [DBG] Connection id "0HMVQI4HU6NDV" completed keep alive response.
+2023-12-11 16:35:50.126 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui.css - - - 200 143632 text/css 181.8242ms
+2023-12-11 16:35:50.190 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-12-11 16:35:50.219 -05:00 [DBG] Connection id "0HMVQI4HU6NE0" completed keep alive response.
+2023-12-11 16:35:50.243 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 164.1753ms
+2023-12-11 16:35:50.271 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-12-11 16:35:50.271 -05:00 [DBG] Connection id "0HMVQI4HU6NDU" completed keep alive response.
+2023-12-11 16:35:50.271 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 330.0034ms
+2023-12-11 16:35:50.636 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-11 16:35:50.856 -05:00 [DBG] Connection id "0HMVQI4HU6NDU" completed keep alive response.
+2023-12-11 16:35:50.856 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 220.4701ms
+2023-12-11 16:37:15.808 -05:00 [DBG] Connection id "0HMVQI4HU6NE1" accepted.
+2023-12-11 16:37:15.811 -05:00 [DBG] Connection id "0HMVQI4HU6NE1" started.
+2023-12-11 16:37:15.831 -05:00 [DBG] Connection 0HMVQI4HU6NE1 established using the following protocol: "Tls12"
+2023-12-11 16:37:15.836 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-11 16:37:15.836 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 16:37:15.859 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:37:15.862 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:37:15.862 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:37:15.865 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:37:15.865 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:37:15.866 -05:00 [DBG] The request is a preflight request.
+2023-12-11 16:37:15.867 -05:00 [DBG] Connection id "0HMVQI4HU6NE1" completed keep alive response.
+2023-12-11 16:37:15.867 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 31.6125ms
+2023-12-11 16:37:15.895 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-11 16:37:15.895 -05:00 [DBG] POST requests are not supported
+2023-12-11 16:37:15.898 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:37:15.898 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:37:15.898 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:37:15.898 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:37:15.898 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:37:15.996 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 16:37:15.998 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:37:16.022 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-11 16:37:16.023 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-11 16:37:16.024 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-11 16:37:16.024 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-11 16:37:16.024 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-11 16:37:16.024 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-11 16:37:16.026 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-11 16:37:16.099 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-11 16:37:16.103 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-11 16:37:16.105 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-11 16:37:16.105 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-11 16:37:16.106 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-11 16:37:16.111 -05:00 [DBG] Connection id "0HMVQI4HU6NE1", Request id "0HMVQI4HU6NE1:00000002": started reading request body.
+2023-12-11 16:37:16.112 -05:00 [DBG] Connection id "0HMVQI4HU6NE1", Request id "0HMVQI4HU6NE1:00000002": done reading request body.
+2023-12-11 16:37:16.220 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-11 16:37:16.220 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-11 16:37:16.220 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-11 16:37:16.227 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-11 16:37:18.176 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-12-11 16:37:18.177 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-12-11 16:37:18.177 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-11 16:37:18.178 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-11 16:37:18.178 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-11 16:37:18.179 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Data.Models.Authentication.AuthResponseBody'.
+2023-12-11 16:37:18.208 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 2180.7791ms
+2023-12-11 16:37:18.209 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:37:18.210 -05:00 [DBG] Connection id "0HMVQI4HU6NE1" completed keep alive response.
+2023-12-11 16:37:18.219 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 200 473 application/json;+charset=utf-8 2323.3928ms
+2023-12-11 16:37:19.241 -05:00 [DBG] Connection id "0HMVQI4HU6NE2" accepted.
+2023-12-11 16:37:19.242 -05:00 [DBG] Connection id "0HMVQI4HU6NE2" started.
+2023-12-11 16:37:19.242 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 16:37:19.242 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 16:37:19.247 -05:00 [DBG] Https port '7235' discovered from server endpoints.
+2023-12-11 16:37:19.248 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 16:37:19.249 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 6.5680ms
+2023-12-11 16:37:19.249 -05:00 [DBG] Connection id "0HMVQI4HU6NE2" disconnecting.
+2023-12-11 16:37:19.249 -05:00 [DBG] Connection id "0HMVQI4HU6NE2" stopped.
+2023-12-11 16:37:19.249 -05:00 [DBG] Connection id "0HMVQI4HU6NE2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 16:37:19.279 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-12-11 16:37:19.279 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 16:37:19.279 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 16:37:19.279 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-12-11 16:37:19.280 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:37:19.280 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:37:19.280 -05:00 [DBG] The request is a preflight request.
+2023-12-11 16:37:19.280 -05:00 [DBG] Connection id "0HMVQI4HU6NE1" completed keep alive response.
+2023-12-11 16:37:19.280 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 1.3620ms
+2023-12-11 16:37:19.303 -05:00 [DBG] Connection id "0HMVQI4HU6NE3" accepted.
+2023-12-11 16:37:19.303 -05:00 [DBG] Connection id "0HMVQI4HU6NE3" started.
+2023-12-11 16:37:19.315 -05:00 [DBG] Connection 0HMVQI4HU6NE3 established using the following protocol: "Tls12"
+2023-12-11 16:37:19.363 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 16:37:19.363 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 16:37:19.363 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 16:37:19.363 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 16:37:19.363 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 16:37:19.363 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:37:19.363 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:37:19.365 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 16:37:19.371 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 16:37:19.375 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 16:37:19.376 -05:00 [DBG] Connection id "0HMVQI4HU6NE3" completed keep alive response.
+2023-12-11 16:37:19.376 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 12.7834ms
+2023-12-11 16:42:14.893 -05:00 [DBG] Connection id "0HMVQI4HU6NDV" received FIN.
+2023-12-11 16:42:14.918 -05:00 [DBG] Connection id "0HMVQI4HU6NE0" received FIN.
+2023-12-11 16:42:14.922 -05:00 [DBG] Connection id "0HMVQI4HU6NDU" received FIN.
+2023-12-11 16:42:15.022 -05:00 [DBG] Connection id "0HMVQI4HU6NDV" disconnecting.
+2023-12-11 16:42:15.022 -05:00 [DBG] Connection id "0HMVQI4HU6NE0" disconnecting.
+2023-12-11 16:42:15.071 -05:00 [DBG] Connection id "0HMVQI4HU6NDU" disconnecting.
+2023-12-11 16:42:15.075 -05:00 [DBG] Connection id "0HMVQI4HU6NDV" sending FIN because: "The client closed the connection."
+2023-12-11 16:42:15.075 -05:00 [DBG] Connection id "0HMVQI4HU6NDU" sending FIN because: "The client closed the connection."
+2023-12-11 16:42:15.102 -05:00 [DBG] Connection id "0HMVQI4HU6NE0" sending FIN because: "The client closed the connection."
+2023-12-11 16:42:15.105 -05:00 [DBG] Connection id "0HMVQI4HU6NDV" stopped.
+2023-12-11 16:42:15.105 -05:00 [DBG] Connection id "0HMVQI4HU6NDU" stopped.
+2023-12-11 16:42:15.107 -05:00 [DBG] Connection id "0HMVQI4HU6NE0" stopped.
+2023-12-11 16:42:36.181 -05:00 [DBG] Connection id "0HMVQI4HU6NE3" received FIN.
+2023-12-11 16:42:36.181 -05:00 [DBG] Connection id "0HMVQI4HU6NE1" received FIN.
+2023-12-11 16:42:36.181 -05:00 [DBG] Connection id "0HMVQI4HU6NE3" sending FIN because: "The client closed the connection."
+2023-12-11 16:42:36.181 -05:00 [DBG] Connection id "0HMVQI4HU6NE3" disconnecting.
+2023-12-11 16:42:36.182 -05:00 [DBG] Connection id "0HMVQI4HU6NE1" disconnecting.
+2023-12-11 16:42:36.182 -05:00 [DBG] Connection id "0HMVQI4HU6NE3" stopped.
+2023-12-11 16:42:36.208 -05:00 [DBG] Connection id "0HMVQI4HU6NE1" stopped.
+2023-12-11 16:42:36.212 -05:00 [DBG] Connection id "0HMVQI4HU6NE1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 16:47:06.665 -05:00 [DBG] Connection id "0HMVQI4HU6NE4" accepted.
+2023-12-11 16:47:06.666 -05:00 [DBG] Connection id "0HMVQI4HU6NE4" started.
+2023-12-11 16:47:06.667 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 16:47:06.667 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 16:47:06.667 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 16:47:06.668 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.6360ms
+2023-12-11 16:47:06.668 -05:00 [DBG] Connection id "0HMVQI4HU6NE4" disconnecting.
+2023-12-11 16:47:06.668 -05:00 [DBG] Connection id "0HMVQI4HU6NE4" stopped.
+2023-12-11 16:47:06.668 -05:00 [DBG] Connection id "0HMVQI4HU6NE4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 16:47:06.676 -05:00 [DBG] Connection id "0HMVQI4HU6NE5" accepted.
+2023-12-11 16:47:06.676 -05:00 [DBG] Connection id "0HMVQI4HU6NE5" started.
+2023-12-11 16:47:06.717 -05:00 [DBG] Connection 0HMVQI4HU6NE5 established using the following protocol: "Tls12"
+2023-12-11 16:47:06.767 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-12-11 16:47:06.768 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 16:47:06.768 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 16:47:06.768 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-12-11 16:47:06.768 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:47:06.768 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:47:06.768 -05:00 [DBG] The request is a preflight request.
+2023-12-11 16:47:06.768 -05:00 [DBG] Connection id "0HMVQI4HU6NE5" completed keep alive response.
+2023-12-11 16:47:06.768 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 1.1411ms
+2023-12-11 16:47:06.791 -05:00 [DBG] Connection id "0HMVQI4HU6NE6" accepted.
+2023-12-11 16:47:06.791 -05:00 [DBG] Connection id "0HMVQI4HU6NE6" started.
+2023-12-11 16:47:06.806 -05:00 [DBG] Connection 0HMVQI4HU6NE6 established using the following protocol: "Tls12"
+2023-12-11 16:47:06.807 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 16:47:06.807 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 16:47:06.807 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 16:47:06.807 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 16:47:06.807 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 16:47:06.807 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:47:06.807 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:47:06.810 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 16:47:06.813 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 16:47:06.813 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 16:47:06.814 -05:00 [DBG] Connection id "0HMVQI4HU6NE6" completed keep alive response.
+2023-12-11 16:47:06.814 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 6.7383ms
+2023-12-11 16:47:30.992 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-11 16:47:31.016 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 16:47:31.016 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:47:31.016 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:47:31.016 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:47:31.016 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:47:31.016 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:47:31.016 -05:00 [DBG] The request is a preflight request.
+2023-12-11 16:47:31.017 -05:00 [DBG] Connection id "0HMVQI4HU6NE5" completed keep alive response.
+2023-12-11 16:47:31.017 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 24.5109ms
+2023-12-11 16:47:31.024 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-11 16:47:31.024 -05:00 [DBG] POST requests are not supported
+2023-12-11 16:47:31.024 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:47:31.024 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:47:31.024 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:47:31.024 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:47:31.024 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:47:31.025 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 16:47:31.025 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:47:31.027 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-11 16:47:31.027 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-11 16:47:31.027 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-11 16:47:31.027 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-11 16:47:31.027 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-11 16:47:31.027 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-11 16:47:31.027 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-11 16:47:31.034 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-11 16:47:31.035 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-11 16:47:31.035 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-11 16:47:31.036 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-11 16:47:31.036 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-11 16:47:31.036 -05:00 [DBG] Connection id "0HMVQI4HU6NE5", Request id "0HMVQI4HU6NE5:00000003": started reading request body.
+2023-12-11 16:47:31.037 -05:00 [DBG] Connection id "0HMVQI4HU6NE5", Request id "0HMVQI4HU6NE5:00000003": done reading request body.
+2023-12-11 16:47:31.038 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-11 16:47:31.039 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-11 16:47:31.039 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-11 16:47:31.040 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-11 16:50:39.693 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-12-11 16:50:39.693 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-12-11 16:50:39.694 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-11 16:50:39.694 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-11 16:50:39.694 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-11 16:50:39.694 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Data.Models.Authentication.AuthResponseBody'.
+2023-12-11 16:50:39.695 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 188668.8934ms
+2023-12-11 16:50:39.695 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:50:39.695 -05:00 [DBG] Connection id "0HMVQI4HU6NE5" completed keep alive response.
+2023-12-11 16:50:39.695 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 200 473 application/json;+charset=utf-8 188673.1471ms
+2023-12-11 16:50:41.127 -05:00 [DBG] Connection id "0HMVQI4HU6NE7" accepted.
+2023-12-11 16:50:41.127 -05:00 [DBG] Connection id "0HMVQI4HU6NE7" started.
+2023-12-11 16:50:41.128 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 16:50:41.128 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 16:50:41.128 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 16:50:41.128 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.3283ms
+2023-12-11 16:50:41.128 -05:00 [DBG] Connection id "0HMVQI4HU6NE7" disconnecting.
+2023-12-11 16:50:41.128 -05:00 [DBG] Connection id "0HMVQI4HU6NE7" stopped.
+2023-12-11 16:50:41.128 -05:00 [DBG] Connection id "0HMVQI4HU6NE7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 16:50:41.130 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-12-11 16:50:41.131 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 16:50:41.131 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 16:50:41.131 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-12-11 16:50:41.131 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:50:41.131 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:50:41.131 -05:00 [DBG] The request is a preflight request.
+2023-12-11 16:50:41.131 -05:00 [DBG] Connection id "0HMVQI4HU6NE5" completed keep alive response.
+2023-12-11 16:50:41.131 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 0.6115ms
+2023-12-11 16:50:41.132 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 16:50:41.132 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 16:50:41.133 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 16:50:41.133 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 16:50:41.133 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 16:50:41.133 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:50:41.133 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:50:41.133 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 16:50:41.135 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 16:50:41.135 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 16:50:41.135 -05:00 [DBG] Connection id "0HMVQI4HU6NE6" completed keep alive response.
+2023-12-11 16:50:41.135 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 2.8068ms
+2023-12-11 16:53:43.580 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-11 16:53:43.758 -05:00 [DBG] Hosting starting
+2023-12-11 16:53:43.787 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-11 16:53:43.794 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-a69ecfee-52d2-4a81-940f-2de1d93835f4.xml'.
+2023-12-11 16:53:43.801 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-12-11 16:53:43.802 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-897113bb-47d7-4707-bc06-4c6e65eb69a4.xml'.
+2023-12-11 16:53:43.802 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e0f0f810-4187-42e3-8478-ba105e26b977.xml'.
+2023-12-11 16:53:43.808 -05:00 [DBG] Found key {a69ecfee-52d2-4a81-940f-2de1d93835f4}.
+2023-12-11 16:53:43.811 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-12-11 16:53:43.811 -05:00 [DBG] Found key {897113bb-47d7-4707-bc06-4c6e65eb69a4}.
+2023-12-11 16:53:43.811 -05:00 [DBG] Found key {e0f0f810-4187-42e3-8478-ba105e26b977}.
+2023-12-11 16:53:43.817 -05:00 [DBG] Considering key {a69ecfee-52d2-4a81-940f-2de1d93835f4} with expiration date 2024-01-23 20:51:58Z as default key.
+2023-12-11 16:53:43.819 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-11 16:53:43.830 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-11 16:53:43.830 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-11 16:53:43.833 -05:00 [DBG] Using key {a69ecfee-52d2-4a81-940f-2de1d93835f4} as the default key.
+2023-12-11 16:53:43.834 -05:00 [DBG] Key ring with default key {a69ecfee-52d2-4a81-940f-2de1d93835f4} was loaded during application startup.
+2023-12-11 16:53:44.432 -05:00 [INF] Now listening on: https://localhost:7235
+2023-12-11 16:53:44.432 -05:00 [INF] Now listening on: http://localhost:5235
+2023-12-11 16:53:44.432 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-12-11 16:53:44.432 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 16:53:44.433 -05:00 [INF] Hosting environment: Development
+2023-12-11 16:53:44.433 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-12-11 16:53:44.433 -05:00 [DBG] Hosting started
+2023-12-11 16:53:44.464 -05:00 [DBG] Connection id "0HMVQIEILTAC1" accepted.
+2023-12-11 16:53:44.465 -05:00 [DBG] Connection id "0HMVQIEILTAC1" started.
+2023-12-11 16:53:45.458 -05:00 [DBG] Connection id "0HMVQIEILTAC1" received FIN.
+2023-12-11 16:53:45.466 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-11 16:53:45.532 -05:00 [DBG] Connection id "0HMVQIEILTAC1" stopped.
+2023-12-11 16:53:45.537 -05:00 [DBG] Connection id "0HMVQIEILTAC1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 16:53:45.625 -05:00 [DBG] Connection id "0HMVQIEILTAC2" accepted.
+2023-12-11 16:53:45.626 -05:00 [DBG] Connection id "0HMVQIEILTAC3" accepted.
+2023-12-11 16:53:45.626 -05:00 [DBG] Connection id "0HMVQIEILTAC2" started.
+2023-12-11 16:53:45.627 -05:00 [DBG] Connection id "0HMVQIEILTAC3" started.
+2023-12-11 16:53:45.854 -05:00 [DBG] Connection 0HMVQIEILTAC2 established using the following protocol: "Tls12"
+2023-12-11 16:53:45.854 -05:00 [DBG] Connection 0HMVQIEILTAC3 established using the following protocol: "Tls12"
+2023-12-11 16:53:45.902 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-12-11 16:53:45.903 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-11 16:53:46.011 -05:00 [DBG] Connection id "0HMVQIEILTAC3" completed keep alive response.
+2023-12-11 16:53:46.013 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 112.6185ms
+2023-12-11 16:53:46.481 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-12-11 16:53:46.756 -05:00 [DBG] Connection id "0HMVQIEILTAC3" completed keep alive response.
+2023-12-11 16:53:46.757 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 275.3508ms
+2023-12-11 16:55:22.192 -05:00 [DBG] Connection id "0HMVQIEILTAC2" received FIN.
+2023-12-11 16:55:22.252 -05:00 [DBG] Connection id "0HMVQIEILTAC2" disconnecting.
+2023-12-11 16:55:22.252 -05:00 [DBG] Connection id "0HMVQIEILTAC2" sending FIN because: "The client closed the connection."
+2023-12-11 16:55:22.254 -05:00 [DBG] Connection id "0HMVQIEILTAC2" stopped.
+2023-12-11 16:56:02.750 -05:00 [DBG] Connection id "0HMVQIEILTAC4" accepted.
+2023-12-11 16:56:02.761 -05:00 [DBG] Connection id "0HMVQIEILTAC4" started.
+2023-12-11 16:56:02.938 -05:00 [DBG] Connection 0HMVQIEILTAC4 established using the following protocol: "Tls12"
+2023-12-11 16:56:02.949 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - -
+2023-12-11 16:56:02.955 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 16:56:03.021 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:56:03.026 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:56:03.028 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:56:03.032 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:56:03.069 -05:00 [INF] CORS policy execution successful.
+2023-12-11 16:56:03.071 -05:00 [DBG] The request is a preflight request.
+2023-12-11 16:56:03.077 -05:00 [DBG] Connection id "0HMVQIEILTAC4" completed keep alive response.
+2023-12-11 16:56:03.077 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/googleAuthenticate - - - 204 - - 128.6822ms
+2023-12-11 16:56:08.045 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308
+2023-12-11 16:56:08.045 -05:00 [DBG] POST requests are not supported
+2023-12-11 16:56:08.048 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:56:08.048 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)' with route pattern 'api/authentication/googleAuthenticate' is valid for the request path '/api/authentication/googleAuthenticate'
+2023-12-11 16:56:08.048 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 16:56:08.049 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 16:56:08.049 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:03:28.378 -05:00 [DBG] Connection id "0HMVQIEILTAC3" reset.
+2023-12-11 17:03:28.427 -05:00 [DBG] Connection id "0HMVQIEILTAC3" sending FIN because: "The client closed the connection."
+2023-12-11 17:03:28.427 -05:00 [DBG] Connection id "0HMVQIEILTAC3" disconnecting.
+2023-12-11 17:03:28.428 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:03:28.432 -05:00 [DBG] Connection id "0HMVQIEILTAC3" stopped.
+2023-12-11 17:03:28.438 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 17:03:28.496 -05:00 [INF] Route matched with {action = "GoogleAuthenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GoogleAuthenticate(Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-12-11 17:03:28.497 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-11 17:03:28.497 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-11 17:03:28.498 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-11 17:03:28.498 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-11 17:03:28.498 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-11 17:03:28.500 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-11 17:04:21.650 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-12-11 17:04:21.658 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-11 17:04:21.661 -05:00 [DBG] Attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' using the name '' in request data ...
+2023-12-11 17:04:21.662 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-12-11 17:04:21.663 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-12-11 17:04:21.671 -05:00 [DBG] Connection id "0HMVQIEILTAC4", Request id "0HMVQIEILTAC4:00000002": started reading request body.
+2023-12-11 17:04:21.671 -05:00 [DBG] Connection id "0HMVQIEILTAC4", Request id "0HMVQIEILTAC4:00000002": done reading request body.
+2023-12-11 17:04:26.393 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-11 17:04:26.394 -05:00 [DBG] Done attempting to bind parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-11 17:04:26.394 -05:00 [DBG] Attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody' ...
+2023-12-11 17:04:28.475 -05:00 [DBG] Done attempting to validate the bound parameter 'requestBody' of type 'Plants.info.API.Data.Models.Authentication.GoogleAuthenticateRequestBody'.
+2023-12-11 17:19:17.668 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-12-11 17:19:17.671 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-12-11 17:19:17.671 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-11 17:19:17.671 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-11 17:19:17.672 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-11 17:19:17.672 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Data.Models.Authentication.AuthResponseBody'.
+2023-12-11 17:19:17.703 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API) in 949100.805ms
+2023-12-11 17:19:17.704 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.GoogleAuthenticate (Plants.info.API)'
+2023-12-11 17:19:17.705 -05:00 [DBG] Connection id "0HMVQIEILTAC4" completed keep alive response.
+2023-12-11 17:19:17.709 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/googleAuthenticate application/json 1308 - 200 473 application/json;+charset=utf-8 1389566.8764ms
+2023-12-11 17:19:19.226 -05:00 [DBG] Connection id "0HMVQIEILTAC5" accepted.
+2023-12-11 17:19:19.226 -05:00 [DBG] Connection id "0HMVQIEILTAC5" started.
+2023-12-11 17:19:19.227 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:19:19.227 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:19:19.232 -05:00 [DBG] Https port '7235' discovered from server endpoints.
+2023-12-11 17:19:19.233 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:19:19.233 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 6.8102ms
+2023-12-11 17:19:19.233 -05:00 [DBG] Connection id "0HMVQIEILTAC5" disconnecting.
+2023-12-11 17:19:19.234 -05:00 [DBG] Connection id "0HMVQIEILTAC5" stopped.
+2023-12-11 17:19:19.234 -05:00 [DBG] Connection id "0HMVQIEILTAC5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:19:19.237 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:19:19.237 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 17:19:19.237 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:19:19.237 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-12-11 17:19:19.238 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:19:19.238 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:19:19.238 -05:00 [DBG] The request is a preflight request.
+2023-12-11 17:19:19.238 -05:00 [DBG] Connection id "0HMVQIEILTAC4" completed keep alive response.
+2023-12-11 17:19:19.238 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 1.2810ms
+2023-12-11 17:19:19.239 -05:00 [DBG] Connection id "0HMVQIEILTAC6" accepted.
+2023-12-11 17:19:19.240 -05:00 [DBG] Connection id "0HMVQIEILTAC6" started.
+2023-12-11 17:19:19.253 -05:00 [DBG] Connection 0HMVQIEILTAC6 established using the following protocol: "Tls12"
+2023-12-11 17:19:19.278 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:19:19.278 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:19:19.278 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:19:19.279 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:19:19.279 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:19:19.279 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:19:19.279 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:19:19.281 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:19:19.288 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:19:19.293 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:19:19.293 -05:00 [DBG] Connection id "0HMVQIEILTAC6" completed keep alive response.
+2023-12-11 17:19:19.293 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 14.7936ms
+2023-12-11 17:25:21.372 -05:00 [DBG] Connection id "0HMVQIEILTAC6" received FIN.
+2023-12-11 17:25:21.372 -05:00 [DBG] Connection id "0HMVQIEILTAC4" received FIN.
+2023-12-11 17:25:21.451 -05:00 [DBG] Connection id "0HMVQIEILTAC4" sending FIN because: "The client closed the connection."
+2023-12-11 17:25:21.451 -05:00 [DBG] Connection id "0HMVQIEILTAC6" sending FIN because: "The client closed the connection."
+2023-12-11 17:25:21.475 -05:00 [DBG] Connection id "0HMVQIEILTAC4" disconnecting.
+2023-12-11 17:25:21.475 -05:00 [DBG] Connection id "0HMVQIEILTAC6" disconnecting.
+2023-12-11 17:25:21.500 -05:00 [DBG] Connection id "0HMVQIEILTAC6" stopped.
+2023-12-11 17:25:21.500 -05:00 [DBG] Connection id "0HMVQIEILTAC4" stopped.
+2023-12-11 17:29:18.051 -05:00 [DBG] Connection id "0HMVQIEILTAC7" accepted.
+2023-12-11 17:29:18.052 -05:00 [DBG] Connection id "0HMVQIEILTAC7" started.
+2023-12-11 17:29:18.064 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:18.073 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:18.076 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:29:18.078 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 15.1520ms
+2023-12-11 17:29:18.078 -05:00 [DBG] Connection id "0HMVQIEILTAC7" disconnecting.
+2023-12-11 17:29:18.078 -05:00 [DBG] Connection id "0HMVQIEILTAC7" stopped.
+2023-12-11 17:29:18.079 -05:00 [DBG] Connection id "0HMVQIEILTAC7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:29:18.115 -05:00 [DBG] Connection id "0HMVQIEILTAC8" accepted.
+2023-12-11 17:29:18.139 -05:00 [DBG] Connection id "0HMVQIEILTAC8" started.
+2023-12-11 17:29:18.206 -05:00 [DBG] Connection 0HMVQIEILTAC8 established using the following protocol: "Tls12"
+2023-12-11 17:29:18.208 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:29:18.208 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 17:29:18.209 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:29:18.209 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-12-11 17:29:18.209 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:29:18.209 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:29:18.210 -05:00 [DBG] The request is a preflight request.
+2023-12-11 17:29:18.210 -05:00 [DBG] Connection id "0HMVQIEILTAC8" completed keep alive response.
+2023-12-11 17:29:18.210 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 2.2962ms
+2023-12-11 17:29:18.216 -05:00 [DBG] Connection id "0HMVQIEILTAC9" accepted.
+2023-12-11 17:29:18.216 -05:00 [DBG] Connection id "0HMVQIEILTAC9" started.
+2023-12-11 17:29:18.310 -05:00 [DBG] Connection 0HMVQIEILTAC9 established using the following protocol: "Tls12"
+2023-12-11 17:29:18.323 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:18.323 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:18.324 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:29:18.324 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:29:18.324 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:29:18.324 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:29:18.324 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:29:18.327 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:29:18.333 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:29:18.334 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:29:18.334 -05:00 [DBG] Connection id "0HMVQIEILTAC9" completed keep alive response.
+2023-12-11 17:29:18.334 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 10.5433ms
+2023-12-11 17:29:18.732 -05:00 [DBG] Connection id "0HMVQIEILTACA" accepted.
+2023-12-11 17:29:18.734 -05:00 [DBG] Connection id "0HMVQIEILTACA" started.
+2023-12-11 17:29:18.734 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:18.735 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:18.735 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:29:18.735 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.7629ms
+2023-12-11 17:29:18.735 -05:00 [DBG] Connection id "0HMVQIEILTACA" disconnecting.
+2023-12-11 17:29:18.735 -05:00 [DBG] Connection id "0HMVQIEILTACA" stopped.
+2023-12-11 17:29:18.735 -05:00 [DBG] Connection id "0HMVQIEILTACA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:29:18.765 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:18.765 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:18.765 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:29:18.765 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:29:18.765 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:29:18.765 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:29:18.765 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:29:18.765 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:29:18.767 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:29:18.768 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:29:18.768 -05:00 [DBG] Connection id "0HMVQIEILTAC9" completed keep alive response.
+2023-12-11 17:29:18.768 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 3.3062ms
+2023-12-11 17:29:31.232 -05:00 [DBG] Connection id "0HMVQIEILTACB" accepted.
+2023-12-11 17:29:31.232 -05:00 [DBG] Connection id "0HMVQIEILTACB" started.
+2023-12-11 17:29:31.232 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:31.233 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:31.233 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:29:31.233 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.2147ms
+2023-12-11 17:29:31.233 -05:00 [DBG] Connection id "0HMVQIEILTACB" disconnecting.
+2023-12-11 17:29:31.233 -05:00 [DBG] Connection id "0HMVQIEILTACB" stopped.
+2023-12-11 17:29:31.233 -05:00 [DBG] Connection id "0HMVQIEILTACB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:29:31.239 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:29:31.239 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 17:29:31.239 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:29:31.239 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-12-11 17:29:31.239 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:29:31.239 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:29:31.239 -05:00 [DBG] The request is a preflight request.
+2023-12-11 17:29:31.239 -05:00 [DBG] Connection id "0HMVQIEILTACC" accepted.
+2023-12-11 17:29:31.239 -05:00 [DBG] Connection id "0HMVQIEILTAC8" completed keep alive response.
+2023-12-11 17:29:31.240 -05:00 [DBG] Connection id "0HMVQIEILTACC" started.
+2023-12-11 17:29:31.240 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 1.1283ms
+2023-12-11 17:29:31.240 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:31.241 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:31.241 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:29:31.241 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:31.241 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 1.3650ms
+2023-12-11 17:29:31.242 -05:00 [DBG] Connection id "0HMVQIEILTACC" disconnecting.
+2023-12-11 17:29:31.242 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:31.242 -05:00 [DBG] Connection id "0HMVQIEILTACC" stopped.
+2023-12-11 17:29:31.245 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:29:31.288 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:29:31.288 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:29:31.288 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:29:31.288 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:29:31.288 -05:00 [DBG] Connection id "0HMVQIEILTACC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:29:31.288 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:29:31.297 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:29:31.297 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:29:31.297 -05:00 [DBG] Connection id "0HMVQIEILTAC9" completed keep alive response.
+2023-12-11 17:29:31.298 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 56.1519ms
+2023-12-11 17:29:31.311 -05:00 [DBG] Connection id "0HMVQIEILTACD" accepted.
+2023-12-11 17:29:31.311 -05:00 [DBG] Connection id "0HMVQIEILTACD" started.
+2023-12-11 17:29:31.356 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:31.356 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:31.357 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:29:31.357 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:29:31.357 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:29:31.357 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:29:31.357 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:29:31.358 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:29:31.358 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:29:31.358 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:29:31.358 -05:00 [DBG] Connection id "0HMVQIEILTAC9" completed keep alive response.
+2023-12-11 17:29:31.358 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 3.4035ms
+2023-12-11 17:29:31.389 -05:00 [DBG] Connection 0HMVQIEILTACD established using the following protocol: "Tls12"
+2023-12-11 17:29:40.239 -05:00 [DBG] Connection id "0HMVQIEILTACE" accepted.
+2023-12-11 17:29:40.242 -05:00 [DBG] Connection id "0HMVQIEILTACE" started.
+2023-12-11 17:29:40.242 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:40.243 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:40.243 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:29:40.243 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.8096ms
+2023-12-11 17:29:40.243 -05:00 [DBG] Connection id "0HMVQIEILTACE" disconnecting.
+2023-12-11 17:29:40.243 -05:00 [DBG] Connection id "0HMVQIEILTACE" stopped.
+2023-12-11 17:29:40.246 -05:00 [DBG] Connection id "0HMVQIEILTACE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:29:40.253 -05:00 [DBG] Connection id "0HMVQIEILTACF" accepted.
+2023-12-11 17:29:40.253 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:29:40.253 -05:00 [DBG] Connection id "0HMVQIEILTACF" started.
+2023-12-11 17:29:40.253 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 17:29:40.253 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:29:40.253 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-12-11 17:29:40.253 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:40.253 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:29:40.253 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:29:40.253 -05:00 [DBG] The request is a preflight request.
+2023-12-11 17:29:40.253 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:40.253 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:29:40.253 -05:00 [DBG] Connection id "0HMVQIEILTAC8" completed keep alive response.
+2023-12-11 17:29:40.253 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 0.8802ms
+2023-12-11 17:29:40.253 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.3943ms
+2023-12-11 17:29:40.253 -05:00 [DBG] Connection id "0HMVQIEILTACF" disconnecting.
+2023-12-11 17:29:40.254 -05:00 [DBG] Connection id "0HMVQIEILTACF" stopped.
+2023-12-11 17:29:40.254 -05:00 [DBG] Connection id "0HMVQIEILTACF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:29:40.257 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:40.257 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:40.257 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:29:40.257 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:29:40.257 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:29:40.257 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:29:40.257 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:29:40.257 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:29:40.257 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:29:40.258 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:29:40.258 -05:00 [DBG] Connection id "0HMVQIEILTAC9" completed keep alive response.
+2023-12-11 17:29:40.258 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 1.2767ms
+2023-12-11 17:29:40.273 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:29:40.279 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:29:40.279 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:29:40.279 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:29:40.279 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:29:40.279 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:29:40.279 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:29:40.279 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:29:40.279 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:29:40.279 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:29:40.279 -05:00 [DBG] Connection id "0HMVQIEILTAC9" completed keep alive response.
+2023-12-11 17:29:40.280 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 6.3109ms
+2023-12-11 17:30:04.271 -05:00 [DBG] Connection id "0HMVQIEILTACG" accepted.
+2023-12-11 17:30:04.276 -05:00 [DBG] Connection id "0HMVQIEILTACG" started.
+2023-12-11 17:30:04.276 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:30:04.276 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:30:04.276 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:30:04.277 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.3727ms
+2023-12-11 17:30:04.277 -05:00 [DBG] Connection id "0HMVQIEILTACG" disconnecting.
+2023-12-11 17:30:04.277 -05:00 [DBG] Connection id "0HMVQIEILTACG" stopped.
+2023-12-11 17:30:04.290 -05:00 [DBG] Connection id "0HMVQIEILTACG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:30:04.311 -05:00 [DBG] Connection id "0HMVQIEILTACH" accepted.
+2023-12-11 17:30:04.356 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:30:04.356 -05:00 [DBG] Connection id "0HMVQIEILTACH" started.
+2023-12-11 17:30:04.382 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 17:30:04.382 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:30:04.384 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-12-11 17:30:04.385 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:30:04.385 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:30:04.385 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:30:04.385 -05:00 [DBG] The request is a preflight request.
+2023-12-11 17:30:04.385 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:30:04.385 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:30:04.385 -05:00 [DBG] Connection id "0HMVQIEILTAC8" completed keep alive response.
+2023-12-11 17:30:04.385 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.3820ms
+2023-12-11 17:30:04.385 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 50.0170ms
+2023-12-11 17:30:04.385 -05:00 [DBG] Connection id "0HMVQIEILTACH" disconnecting.
+2023-12-11 17:30:04.385 -05:00 [DBG] Connection id "0HMVQIEILTACH" stopped.
+2023-12-11 17:30:04.407 -05:00 [DBG] Connection id "0HMVQIEILTACH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:30:04.407 -05:00 [DBG] Connection id "0HMVQIEILTACH" received FIN.
+2023-12-11 17:30:04.408 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:30:04.408 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:30:04.408 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:30:04.408 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:30:04.432 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:30:04.433 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:30:04.433 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:30:04.433 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:30:04.433 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:30:04.433 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:30:04.433 -05:00 [DBG] Connection id "0HMVQIEILTAC9" completed keep alive response.
+2023-12-11 17:30:04.433 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 25.6495ms
+2023-12-11 17:30:04.445 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:30:04.445 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:30:04.447 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:30:04.447 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:30:04.447 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:30:04.447 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:30:04.447 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:30:04.447 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:30:04.447 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:30:04.448 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:30:04.448 -05:00 [DBG] Connection id "0HMVQIEILTACD" completed keep alive response.
+2023-12-11 17:30:04.448 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 2.8895ms
+2023-12-11 17:30:15.228 -05:00 [DBG] Connection id "0HMVQIEILTACI" accepted.
+2023-12-11 17:30:15.229 -05:00 [DBG] Connection id "0HMVQIEILTACI" started.
+2023-12-11 17:30:15.230 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:30:15.230 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:30:15.230 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:30:15.230 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.2681ms
+2023-12-11 17:30:15.230 -05:00 [DBG] Connection id "0HMVQIEILTACI" disconnecting.
+2023-12-11 17:30:15.230 -05:00 [DBG] Connection id "0HMVQIEILTACI" stopped.
+2023-12-11 17:30:15.230 -05:00 [DBG] Connection id "0HMVQIEILTACI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:30:15.244 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:30:15.275 -05:00 [DBG] Connection id "0HMVQIEILTACJ" accepted.
+2023-12-11 17:30:15.276 -05:00 [DBG] OPTIONS requests are not supported
+2023-12-11 17:30:15.276 -05:00 [DBG] Connection id "0HMVQIEILTACJ" started.
+2023-12-11 17:30:15.276 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:30:15.276 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-12-11 17:30:15.276 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:30:15.276 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:30:15.276 -05:00 [DBG] The request is a preflight request.
+2023-12-11 17:30:15.276 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:30:15.276 -05:00 [DBG] Connection id "0HMVQIEILTAC8" completed keep alive response.
+2023-12-11 17:30:15.276 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 32.4574ms
+2023-12-11 17:30:15.277 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:30:15.277 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:30:15.277 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants application/json;+charset=utf-8 - - 307 0 - 0.9102ms
+2023-12-11 17:30:15.278 -05:00 [DBG] Connection id "0HMVQIEILTACJ" disconnecting.
+2023-12-11 17:30:15.278 -05:00 [DBG] Connection id "0HMVQIEILTACJ" stopped.
+2023-12-11 17:30:15.280 -05:00 [DBG] Connection id "0HMVQIEILTACJ" received FIN.
+2023-12-11 17:30:15.280 -05:00 [DBG] Connection id "0HMVQIEILTACJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:30:15.280 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:30:15.280 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:30:15.280 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:30:15.280 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:30:15.280 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:30:15.281 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:30:15.281 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:30:15.281 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:30:15.281 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:30:15.281 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:30:15.283 -05:00 [DBG] Connection id "0HMVQIEILTACD" completed keep alive response.
+2023-12-11 17:30:15.283 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 2.7549ms
+2023-12-11 17:30:15.286 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 -
+2023-12-11 17:30:15.286 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:30:15.286 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:30:15.286 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:30:15.287 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:30:15.287 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:30:15.287 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:30:15.287 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:30:15.287 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:30:15.287 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:30:15.287 -05:00 [DBG] Connection id "0HMVQIEILTAC9" completed keep alive response.
+2023-12-11 17:30:15.287 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants application/json;+charset=utf-8 - - 401 0 - 1.4447ms
+2023-12-11 17:31:00.642 -05:00 [DBG] Connection id "0HMVQIEILTACK" accepted.
+2023-12-11 17:31:00.648 -05:00 [DBG] Connection id "0HMVQIEILTACK" started.
+2023-12-11 17:31:00.675 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:31:00.675 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:00.675 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:31:00.675 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.6064ms
+2023-12-11 17:31:00.676 -05:00 [DBG] Connection id "0HMVQIEILTACK" disconnecting.
+2023-12-11 17:31:00.676 -05:00 [DBG] Connection id "0HMVQIEILTACK" stopped.
+2023-12-11 17:31:00.676 -05:00 [DBG] Connection id "0HMVQIEILTACK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:31:00.685 -05:00 [DBG] Connection id "0HMVQIEILTACL" accepted.
+2023-12-11 17:31:00.685 -05:00 [DBG] Connection id "0HMVQIEILTACL" started.
+2023-12-11 17:31:00.686 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:31:00.687 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:31:00.687 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:00.687 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:31:00.687 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:00.687 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.3858ms
+2023-12-11 17:31:00.687 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:31:00.687 -05:00 [DBG] Connection id "0HMVQIEILTACL" disconnecting.
+2023-12-11 17:31:00.687 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:31:00.687 -05:00 [DBG] Connection id "0HMVQIEILTACL" stopped.
+2023-12-11 17:31:00.687 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:31:00.688 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:31:00.688 -05:00 [DBG] Connection id "0HMVQIEILTACL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:31:00.688 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:31:00.690 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:31:00.690 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:31:00.690 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:31:00.690 -05:00 [DBG] Connection id "0HMVQIEILTAC9" completed keep alive response.
+2023-12-11 17:31:00.690 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 3.7583ms
+2023-12-11 17:31:00.728 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:31:00.728 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:00.728 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:31:00.728 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:31:00.728 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:31:00.728 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:31:00.728 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:31:00.729 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:31:00.734 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:31:00.734 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:31:00.734 -05:00 [DBG] Connection id "0HMVQIEILTACD" completed keep alive response.
+2023-12-11 17:31:00.735 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 12.6035ms
+2023-12-11 17:31:04.253 -05:00 [DBG] Connection id "0HMVQIEILTACM" accepted.
+2023-12-11 17:31:04.254 -05:00 [DBG] Connection id "0HMVQIEILTACM" started.
+2023-12-11 17:31:04.254 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:31:04.254 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:04.254 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:31:04.254 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.3049ms
+2023-12-11 17:31:04.254 -05:00 [DBG] Connection id "0HMVQIEILTACM" disconnecting.
+2023-12-11 17:31:04.254 -05:00 [DBG] Connection id "0HMVQIEILTACM" stopped.
+2023-12-11 17:31:04.255 -05:00 [DBG] Connection id "0HMVQIEILTACM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:31:04.314 -05:00 [DBG] Connection id "0HMVQIEILTACN" accepted.
+2023-12-11 17:31:04.314 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:31:04.314 -05:00 [DBG] Connection id "0HMVQIEILTACN" started.
+2023-12-11 17:31:04.314 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:31:04.314 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:04.315 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:04.315 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:31:04.315 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:31:04.315 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.2736ms
+2023-12-11 17:31:04.315 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:31:04.315 -05:00 [DBG] Connection id "0HMVQIEILTACN" disconnecting.
+2023-12-11 17:31:04.315 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:31:04.315 -05:00 [DBG] Connection id "0HMVQIEILTACN" stopped.
+2023-12-11 17:31:04.315 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:31:04.315 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:31:04.315 -05:00 [DBG] Connection id "0HMVQIEILTACN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:31:04.315 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:31:04.316 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:31:04.316 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:31:04.316 -05:00 [DBG] Connection id "0HMVQIEILTACD" completed keep alive response.
+2023-12-11 17:31:04.316 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 2.6789ms
+2023-12-11 17:31:04.326 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:31:04.326 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:04.326 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:31:04.326 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:31:04.326 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:31:04.326 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:31:04.326 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:31:04.326 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:31:04.327 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:31:04.327 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:31:04.327 -05:00 [DBG] Connection id "0HMVQIEILTACD" completed keep alive response.
+2023-12-11 17:31:04.327 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.1695ms
+2023-12-11 17:31:51.103 -05:00 [DBG] Connection id "0HMVQIEILTACO" accepted.
+2023-12-11 17:31:51.106 -05:00 [DBG] Connection id "0HMVQIEILTACO" started.
+2023-12-11 17:31:51.106 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:31:51.106 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:51.112 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:31:51.112 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 5.7445ms
+2023-12-11 17:31:51.112 -05:00 [DBG] Connection id "0HMVQIEILTACO" disconnecting.
+2023-12-11 17:31:51.112 -05:00 [DBG] Connection id "0HMVQIEILTACO" stopped.
+2023-12-11 17:31:51.112 -05:00 [DBG] Connection id "0HMVQIEILTACO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:31:51.114 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:31:51.114 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:31:51.114 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:31:51.114 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:31:51.114 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:31:51.114 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:31:51.114 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:31:51.115 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:31:51.115 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:31:51.115 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:31:51.115 -05:00 [DBG] Connection id "0HMVQIEILTACD" completed keep alive response.
+2023-12-11 17:31:51.115 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.0505ms
+2023-12-11 17:35:17.671 -05:00 [DBG] Connection id "0HMVQIEILTAC8" received FIN.
+2023-12-11 17:35:17.674 -05:00 [DBG] Connection id "0HMVQIEILTAC8" sending FIN because: "The client closed the connection."
+2023-12-11 17:35:17.681 -05:00 [DBG] Connection id "0HMVQIEILTAC8" disconnecting.
+2023-12-11 17:35:17.681 -05:00 [DBG] Connection id "0HMVQIEILTAC8" stopped.
+2023-12-11 17:36:02.283 -05:00 [DBG] Connection id "0HMVQIEILTAC9" received FIN.
+2023-12-11 17:36:02.283 -05:00 [DBG] Connection id "0HMVQIEILTAC9" sending FIN because: "The client closed the connection."
+2023-12-11 17:36:02.291 -05:00 [DBG] Connection id "0HMVQIEILTAC9" disconnecting.
+2023-12-11 17:36:02.291 -05:00 [DBG] Connection id "0HMVQIEILTAC9" stopped.
+2023-12-11 17:36:58.923 -05:00 [DBG] Connection id "0HMVQIEILTACD" received FIN.
+2023-12-11 17:36:58.923 -05:00 [DBG] Connection id "0HMVQIEILTACD" sending FIN because: "The client closed the connection."
+2023-12-11 17:36:58.926 -05:00 [DBG] Connection id "0HMVQIEILTACD" disconnecting.
+2023-12-11 17:36:58.929 -05:00 [DBG] Connection id "0HMVQIEILTACD" stopped.
+2023-12-11 17:38:05.226 -05:00 [DBG] Connection id "0HMVQIEILTACP" accepted.
+2023-12-11 17:38:05.228 -05:00 [DBG] Connection id "0HMVQIEILTACP" started.
+2023-12-11 17:38:05.231 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:38:05.231 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:05.231 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:38:05.231 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.1952ms
+2023-12-11 17:38:05.231 -05:00 [DBG] Connection id "0HMVQIEILTACP" disconnecting.
+2023-12-11 17:38:05.231 -05:00 [DBG] Connection id "0HMVQIEILTACP" stopped.
+2023-12-11 17:38:05.231 -05:00 [DBG] Connection id "0HMVQIEILTACP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:38:05.238 -05:00 [DBG] Connection id "0HMVQIEILTACQ" accepted.
+2023-12-11 17:38:05.238 -05:00 [DBG] Connection id "0HMVQIEILTACR" accepted.
+2023-12-11 17:38:05.238 -05:00 [DBG] Connection id "0HMVQIEILTACQ" started.
+2023-12-11 17:38:05.239 -05:00 [DBG] Connection id "0HMVQIEILTACR" started.
+2023-12-11 17:38:05.239 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:38:05.239 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:05.239 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:38:05.239 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.2152ms
+2023-12-11 17:38:05.239 -05:00 [DBG] Connection id "0HMVQIEILTACR" disconnecting.
+2023-12-11 17:38:05.239 -05:00 [DBG] Connection id "0HMVQIEILTACR" stopped.
+2023-12-11 17:38:05.239 -05:00 [DBG] Connection id "0HMVQIEILTACR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:38:05.254 -05:00 [DBG] Connection 0HMVQIEILTACQ established using the following protocol: "Tls12"
+2023-12-11 17:38:05.255 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:38:05.255 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:05.255 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:38:05.255 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:38:05.255 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:38:05.256 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:38:05.256 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:38:05.256 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:38:05.256 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:38:05.256 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:38:05.256 -05:00 [DBG] Connection id "0HMVQIEILTACQ" completed keep alive response.
+2023-12-11 17:38:05.256 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 0.6578ms
+2023-12-11 17:38:05.280 -05:00 [DBG] Connection id "0HMVQIEILTACS" accepted.
+2023-12-11 17:38:05.280 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:38:05.280 -05:00 [DBG] Connection id "0HMVQIEILTACS" started.
+2023-12-11 17:38:05.280 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:05.280 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:38:05.281 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:38:05.281 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:38:05.281 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:38:05.281 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:38:05.281 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:38:05.281 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:38:05.281 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:38:05.281 -05:00 [DBG] Connection id "0HMVQIEILTACQ" completed keep alive response.
+2023-12-11 17:38:05.281 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.0536ms
+2023-12-11 17:38:05.297 -05:00 [DBG] Connection 0HMVQIEILTACS established using the following protocol: "Tls12"
+2023-12-11 17:38:16.676 -05:00 [DBG] Connection id "0HMVQIEILTACT" accepted.
+2023-12-11 17:38:16.679 -05:00 [DBG] Connection id "0HMVQIEILTACT" started.
+2023-12-11 17:38:16.679 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:38:16.680 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:16.680 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:38:16.680 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.4312ms
+2023-12-11 17:38:16.680 -05:00 [DBG] Connection id "0HMVQIEILTACT" disconnecting.
+2023-12-11 17:38:16.680 -05:00 [DBG] Connection id "0HMVQIEILTACT" stopped.
+2023-12-11 17:38:16.681 -05:00 [DBG] Connection id "0HMVQIEILTACT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:38:16.703 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:38:16.703 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:16.703 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:38:16.703 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:38:16.703 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:38:16.703 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:38:16.703 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:38:16.703 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:38:16.703 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:38:16.703 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:38:16.703 -05:00 [DBG] Connection id "0HMVQIEILTACQ" completed keep alive response.
+2023-12-11 17:38:16.704 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 0.9079ms
+2023-12-11 17:38:17.222 -05:00 [DBG] Connection id "0HMVQIEILTACU" accepted.
+2023-12-11 17:38:17.222 -05:00 [DBG] Connection id "0HMVQIEILTACU" started.
+2023-12-11 17:38:17.222 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:38:17.222 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:17.222 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:38:17.222 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.2859ms
+2023-12-11 17:38:17.222 -05:00 [DBG] Connection id "0HMVQIEILTACU" disconnecting.
+2023-12-11 17:38:17.222 -05:00 [DBG] Connection id "0HMVQIEILTACU" stopped.
+2023-12-11 17:38:17.223 -05:00 [DBG] Connection id "0HMVQIEILTACU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:38:17.228 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:38:17.228 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:17.228 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:38:17.228 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:38:17.229 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:38:17.229 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:38:17.229 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:38:17.229 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:38:17.229 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:38:17.229 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:38:17.229 -05:00 [DBG] Connection id "0HMVQIEILTACQ" completed keep alive response.
+2023-12-11 17:38:17.229 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 0.9909ms
+2023-12-11 17:38:31.595 -05:00 [DBG] Connection id "0HMVQIEILTACV" accepted.
+2023-12-11 17:38:31.597 -05:00 [DBG] Connection id "0HMVQIEILTACV" started.
+2023-12-11 17:38:31.597 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:38:31.597 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:31.597 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:38:31.597 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.2438ms
+2023-12-11 17:38:31.597 -05:00 [DBG] Connection id "0HMVQIEILTACV" disconnecting.
+2023-12-11 17:38:31.597 -05:00 [DBG] Connection id "0HMVQIEILTACV" stopped.
+2023-12-11 17:38:31.598 -05:00 [DBG] Connection id "0HMVQIEILTACV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:38:31.601 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:38:31.602 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:31.602 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:38:31.602 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:38:31.602 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:38:31.602 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:38:31.627 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:38:31.628 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:38:31.628 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:38:31.628 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:38:31.628 -05:00 [DBG] Connection id "0HMVQIEILTACQ" completed keep alive response.
+2023-12-11 17:38:31.628 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 26.7868ms
+2023-12-11 17:38:32.234 -05:00 [DBG] Connection id "0HMVQIEILTAD0" accepted.
+2023-12-11 17:38:32.236 -05:00 [DBG] Connection id "0HMVQIEILTAD0" started.
+2023-12-11 17:38:32.236 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:38:32.236 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:32.236 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:38:32.236 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.4080ms
+2023-12-11 17:38:32.236 -05:00 [DBG] Connection id "0HMVQIEILTAD0" disconnecting.
+2023-12-11 17:38:32.237 -05:00 [DBG] Connection id "0HMVQIEILTAD0" stopped.
+2023-12-11 17:38:32.240 -05:00 [DBG] Connection id "0HMVQIEILTAD0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:38:32.265 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:38:32.265 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:32.265 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:38:32.265 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:38:32.265 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:38:32.265 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:38:32.265 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:38:32.265 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:38:32.265 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:38:32.266 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:38:32.266 -05:00 [DBG] Connection id "0HMVQIEILTACQ" completed keep alive response.
+2023-12-11 17:38:32.266 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.2239ms
+2023-12-11 17:38:39.553 -05:00 [DBG] Connection id "0HMVQIEILTAD1" accepted.
+2023-12-11 17:38:39.554 -05:00 [DBG] Connection id "0HMVQIEILTAD1" started.
+2023-12-11 17:38:39.554 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:38:39.554 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:39.554 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:38:39.554 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.2108ms
+2023-12-11 17:38:39.555 -05:00 [DBG] Connection id "0HMVQIEILTAD1" disconnecting.
+2023-12-11 17:38:39.555 -05:00 [DBG] Connection id "0HMVQIEILTAD1" stopped.
+2023-12-11 17:38:39.555 -05:00 [DBG] Connection id "0HMVQIEILTAD1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:38:39.556 -05:00 [DBG] Connection id "0HMVQIEILTAD1" received FIN.
+2023-12-11 17:38:39.557 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:38:39.557 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:39.557 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:38:39.557 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:38:39.557 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:38:39.557 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:38:39.557 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:38:39.557 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:38:39.557 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:38:39.557 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:38:39.558 -05:00 [DBG] Connection id "0HMVQIEILTACQ" completed keep alive response.
+2023-12-11 17:38:39.558 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.3998ms
+2023-12-11 17:38:55.268 -05:00 [DBG] Connection id "0HMVQIEILTAD2" accepted.
+2023-12-11 17:38:55.268 -05:00 [DBG] Connection id "0HMVQIEILTAD2" started.
+2023-12-11 17:38:55.269 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:38:55.270 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:55.270 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:38:55.270 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.2554ms
+2023-12-11 17:38:55.270 -05:00 [DBG] Connection id "0HMVQIEILTAD2" disconnecting.
+2023-12-11 17:38:55.270 -05:00 [DBG] Connection id "0HMVQIEILTAD2" stopped.
+2023-12-11 17:38:55.274 -05:00 [DBG] Connection id "0HMVQIEILTAD2" received FIN.
+2023-12-11 17:38:55.274 -05:00 [DBG] Connection id "0HMVQIEILTAD2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:38:55.275 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:38:55.275 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:55.286 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:38:55.286 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:38:55.286 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:38:55.286 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:38:55.286 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:38:55.287 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:38:55.287 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:38:55.287 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:38:55.287 -05:00 [DBG] Connection id "0HMVQIEILTACQ" completed keep alive response.
+2023-12-11 17:38:55.287 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 12.2887ms
+2023-12-11 17:38:56.221 -05:00 [DBG] Connection id "0HMVQIEILTAD3" accepted.
+2023-12-11 17:38:56.236 -05:00 [DBG] Connection id "0HMVQIEILTAD3" started.
+2023-12-11 17:38:56.237 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-12-11 17:38:56.237 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:56.237 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-12-11 17:38:56.237 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.3804ms
+2023-12-11 17:38:56.238 -05:00 [DBG] Connection id "0HMVQIEILTAD3" received FIN.
+2023-12-11 17:38:56.240 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-12-11 17:38:56.255 -05:00 [DBG] Connection id "0HMVQIEILTAD3" disconnecting.
+2023-12-11 17:38:56.256 -05:00 [DBG] The request path  does not match the path filter
+2023-12-11 17:38:56.256 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-12-11 17:38:56.256 -05:00 [DBG] Connection id "0HMVQIEILTAD3" sending FIN because: "The client closed the connection."
+2023-12-11 17:38:56.256 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-12-11 17:38:56.256 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByUserId (Plants.info.API)'
+2023-12-11 17:38:56.256 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-12-11 17:38:56.256 -05:00 [INF] CORS policy execution successful.
+2023-12-11 17:38:56.256 -05:00 [DBG] Connection id "0HMVQIEILTAD3" stopped.
+2023-12-11 17:38:56.274 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-11 17:38:56.274 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-11 17:38:56.274 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-11 17:38:56.275 -05:00 [DBG] Connection id "0HMVQIEILTACQ" completed keep alive response.
+2023-12-11 17:38:56.275 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 34.9138ms
+2023-12-11 17:40:09.463 -05:00 [DBG] Connection id "0HMVQIEILTACS" received FIN.
+2023-12-11 17:40:09.463 -05:00 [DBG] Connection id "0HMVQIEILTACS" disconnecting.
+2023-12-11 17:40:09.469 -05:00 [DBG] Connection id "0HMVQIEILTACS" stopped.
+2023-12-11 17:40:09.469 -05:00 [DBG] Connection id "0HMVQIEILTACS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-11 17:47:46.314 -05:00 [DBG] Connection id "0HMVQIEILTACQ" received FIN.
+2023-12-11 17:47:46.397 -05:00 [DBG] Connection id "0HMVQIEILTACQ" sending FIN because: "The client closed the connection."
+2023-12-11 17:47:46.398 -05:00 [DBG] Connection id "0HMVQIEILTACQ" disconnecting.
+2023-12-11 17:47:46.399 -05:00 [DBG] Connection id "0HMVQIEILTACQ" stopped.

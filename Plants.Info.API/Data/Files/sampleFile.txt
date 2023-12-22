@@ -1,0 +1,35 @@
+This is a sample file to test returning Files with our API. 
+ "applicationUrl": "https://localhost:7235;http://localhost:5235", old applicationUrl
+ settings for port numeration
+
+"applicationUrl": "http://+:5235",
+
+ user context db for entity framework =Data Source=(localdb)\\ProjectsV13;Initial Catalog=PlantsUsersDb;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true"
+
+
+Server=localhost;Database=SalesDb;User Id=SA;Password=A!VeryComplex123Password;MultipleActiveResultSets=true
+
+email
+: 
+"danteortiz008@gmail.com"
+firstName
+: 
+"Dante"
+id
+: 
+"106961010760747331515"
+idToken
+: 
+"eyJhbGciOiJSUzI1NiIsImtpZCI6IjgzOGMwNmM2MjA0NmMyZDk0OGFmZmUxMzdkZDUzMTAxMjlmNGQ1ZDEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2ODM1NzM5MzU5OTgtZzJhdmV1NmU3bjk4YXU1dW1hcXZxOG5iYXA5ajR2N2suYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2ODM1NzM5MzU5OTgtZzJhdmV1NmU3bjk4YXU1dW1hcXZxOG5iYXA5ajR2N2suYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDY5NjEwMTA3NjA3NDczMzE1MTUiLCJlbWFpbCI6ImRhbnRlb3J0aXowMDhAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5iZiI6MTY5NDI4MDI4NywibmFtZSI6IkRhbnRlIE9ydGl6IiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0tSVzl2aWtiT2Y3b3ZtUXUwY013dVc0WEFVM3NXNzlUQmVzSU4xZFgyNj1zOTYtYyIsImdpdmVuX25hbWUiOiJEYW50ZSIsImZhbWlseV9uYW1lIjoiT3J0aXoiLCJsb2NhbGUiOiJlbiIsImlhdCI6MTY5NDI4MDU4NywiZXhwIjoxNjk0Mjg0MTg3LCJqdGkiOiI4ZjJkYzA3MjcyOTJmMzQwMDcyMzJkMjZhNzAwMjgxMWMzYWNjYzI2In0.b0PxOz5FDJNMt3XgHMW-HKo_1-NlTbPvYR_r_hlTGPKZsWfANGRU4Hkp96VQ6Nu5-cmsKuSvF2ZLI2BKHwz1_8F8zo-VUoqJndqBToaG2qnQETppFfAXo_bsBOHmSnQLZ5rdiB9oi9zLtmuKxaCocruurWFqxkYi6EtVzrsqHN0uGF6rlFkqv1xsl_4q3bi_uIZQaoMZtA4_ProEqrx1HYhGFZw4lOQ7EylSUp2etBTqf7Q-X0p8YIQ5N37iMGkvG2gCk-gCLbISdMsX1VhtMO9XBIkePAp7-IZDRDtTxhHP3cXAIFJ4bCs2NXVueFtdHSOubGoOzD3fxcGGJg7Skw"
+lastName
+: 
+"Ortiz"
+name
+: 
+"Dante Ortiz"
+photoUrl
+: 
+"https://lh3.googleusercontent.com/a/ACg8ocKRW9vikbOf7ovmQu0cMwuW4XAU3sW79TBesIN1dX26=s96-c"
+provider
+: 
+"GOOGLE"

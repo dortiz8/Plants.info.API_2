@@ -1,0 +1,20 @@
+﻿# Ignore bin and obj directories
+bin/
+obj/
+
+# Ignore Visual Studio files
+*.user
+*.suo
+*.sln.docstates
+
+# Ignore ReSharper files
+_ReSharper/
+[Rr]eSharper.[Cc]ache/
+
+# Ignore NuGet package directory
+packages/
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+*.vs/
