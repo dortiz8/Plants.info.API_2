@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Xml.Linq;
+using Microsoft.EntityFrameworkCore;
 using Plants.info.API.Data.Contexts;
 using Plants.info.API.Data.Models;
 using Plants.info.API.Data.Services;
@@ -154,7 +156,7 @@ namespace Plants.info.API.Data.Repository
 
         public async Task<PlantImage?> GetPlantImage(int userId, int plantId)
         {
-            return await _ctx.PlantImage.Where(x => x.UserId == userId && x.PlantId == plantId).FirstOrDefaultAsync(); 
+            return await _ctx.PlantImage.Where(x => x.UserId == userId && x.PlantId == plantId).OrderByDescending(x => x.Id).FirstOrDefaultAsync(); 
         }
 
         public async Task CreatePlantImageAsync(PlantImage plantImage)
@@ -162,5 +164,20 @@ namespace Plants.info.API.Data.Repository
             await _ctx.PlantImage.AddAsync(plantImage); 
         }
 
+        public async Task SavePlantImageUrl(int userId, int plantId, string imageUrl)
+        {
+            var plantImage = await GetPlantImage(userId, plantId);
+            if(plantImage != null)
+            {
+                plantImage.Url = imageUrl; 
+            }
+            await SaveAllChangesAsync(); 
+        }
+
+        public async Task<bool> DoesPlantExists(int userId, int plantId)
+        {
+            var count = await _ctx.Plants.CountAsync(x => x.UserId == userId && x.Id == plantId);
+            return (count > 0);
+        }
     }
 }

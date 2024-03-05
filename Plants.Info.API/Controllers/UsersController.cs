@@ -83,7 +83,7 @@ namespace Plants.info.API.Controllers
         }
         //[Authorize(Policy = "RoleMustBeAdmin")] // Makes sure we are authenticated with a token before accessing this endpoint
         [HttpPost]
-        public async Task<ActionResult<PlantInfoUser>> CreateUser( UserCreation userCreationObject)
+        public async Task<ActionResult<User>> CreateUser( UserCreation userCreationObject)
         {
             try
             {
@@ -93,7 +93,7 @@ namespace Plants.info.API.Controllers
                 if (await _repo.UserNameExistsAsync(userCreationObject.UserName)) return Conflict(); 
 
                 
-                var newUser = new PlantInfoUser()
+                var newUser = new User()
                 {
                     FirstName = userCreationObject.Name,
                     LastName = userCreationObject.Lname,

@@ -13,6 +13,10 @@
     <None Remove="Data\Services\Extensions\" />
     <None Remove="Data\Services\PlantServices\" />
     <None Remove="Data\Services\UserServices\" />
+    <None Remove="Data\Services\BlobStorageService\" />
+    <None Remove="Data\Services\BlobStorageService\Interfaces\" />
+    <None Remove="Data\Services\ImageServices\" />
+    <None Remove="Data\Services\ImageServices\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -20,10 +24,15 @@
     <Folder Include="Data\Services\Extensions\" />
     <Folder Include="Data\Services\PlantServices\" />
     <Folder Include="Data\Services\UserServices\" />
+    <Folder Include="Data\Services\BlobStorageService\" />
+    <Folder Include="Data\Services\BlobStorageService\Interfaces\" />
+    <Folder Include="Data\Services\ImageServices\" />
+    <Folder Include="Data\Services\ImageServices\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="6.0.10" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.14.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Plants.info.API.Common\Plants.info.API.Common.csproj" />

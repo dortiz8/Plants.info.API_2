@@ -13,5 +13,6 @@ namespace Plants.info.API.Models
         public int WaterInterval { get; set; }
         public int FertilizeInterval { get; set; }
         public int UserId { get; set; }
+        public DateTime? DateUpdated { get; set; }
     }
 }

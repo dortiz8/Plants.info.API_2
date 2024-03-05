@@ -68,7 +68,7 @@ namespace Plants.info.API.Data.Services.JwtFeatures
         }
 
 
-        public string GenerateAccessToken(PlantInfoUser user)
+        public string GenerateAccessToken(User user)
         {
             var signingCredentials = this.GetSigningCredentials();
             var claimsForToken = this.GetClaims(user);
@@ -92,7 +92,7 @@ namespace Plants.info.API.Data.Services.JwtFeatures
             return new SigningCredentials(secret, SecurityAlgorithms.HmacSha256);
         }
 
-        private List<Claim> GetClaims(PlantInfoUser user)
+        private List<Claim> GetClaims(User user)
         {
             var claimsForToken = new List<Claim>();
             claimsForToken.Add(new Claim(ClaimTypes.Name, user.Id.ToString())); 
@@ -107,7 +107,8 @@ namespace Plants.info.API.Data.Services.JwtFeatures
 
         private SecurityTokenDescriptor GenerateTokenDescriptor(SigningCredentials signingCredentials, List<Claim> claims)
         {
-            var date = DateTime.UtcNow; 
+            var date = DateTime.UtcNow;
+
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),

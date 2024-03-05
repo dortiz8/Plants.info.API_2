@@ -15,7 +15,7 @@ namespace Plants.info.API.Data.Contexts
         }
 
 
-        public DbSet<PlantInfoUser> Users { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<Plant> Plants { get; set; }
         public DbSet<Genus> Genus { get; set; }
         public DbSet<PlantNote> PlantNotes { get; set; }
@@ -32,7 +32,15 @@ namespace Plants.info.API.Data.Contexts
             //base.OnConfiguring(optionsBuilder);
             //optionsBuilder.UseSqlServer(_config["ConnectionStrings:UserContextDb"]);
 
-            var connectionString = _config["ConnectionStrings:UserContextDb"]; 
+            //var connectionString = _config["ConnectionStrings:UserContextDb"];
+            var userId = Environment.GetEnvironmentVariable("DB_ID") ?? "";
+            var userPwd = Environment.GetEnvironmentVariable("DB_PSWD") ?? "";
+
+
+            //var connectionString = $"Server=localhost;Database=PlantUsersDb;User Id={userId};Password={userPwd};MultipleActiveResultSets=true"; 
+            var connectionString = $"Server=tcp:plantuserssqldb.database.windows.net,1433;Initial Catalog=PlantUsersDb;Persist Security Info=False;User ID={userId};Password={userPwd};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"; 
+
+
             optionsBuilder.UseSqlServer(connectionString);  
         }
         // Specify how the mapping is going to happen between your entities and the db

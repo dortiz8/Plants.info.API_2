@@ -52,7 +52,7 @@ namespace Plants.info.API.Controllers
         {
             // Step #1 Validate user credentials
             //var user = await _userService.FindUserByUsernameAsync(authenticationRequestBody.UserName);
-            var user = new PlantInfoUser(); // fix
+            var user = new User(); // fix
 
             if (user == null) return NotFound(new AuthResponseBody { ErrorMessage = "No account found" });
 
@@ -105,6 +105,7 @@ namespace Plants.info.API.Controllers
                 if(token != null && refreshToken != null)
                 {
                     await _userService.UpdateUserTokens(user, refreshToken);
+
 
                     return Ok(new AuthResponseBody { IsAuthSuccessful = true, Token = token, RefreshToken = refreshToken, UserId = user.Id }); 
                 }

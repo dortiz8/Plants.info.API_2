@@ -15,9 +15,9 @@ namespace Plants.info.API.Data.Services.UserServices
             _userRepository = userRepository;
         }
 
-        public async Task<PlantInfoUser?> CreateNewUserAsync(GoogleAuthenticateRequestBody requestBody)
+        public async Task<User?> CreateNewUserAsync(GoogleAuthenticateRequestBody requestBody)
         {
-            var newUser = new PlantInfoUser()
+            var newUser = new User()
             {
                 Email = requestBody?.Email,
                 UserName = requestBody?.Email,
@@ -32,17 +32,17 @@ namespace Plants.info.API.Data.Services.UserServices
             return newUser; 
         }
 
-        public Task<PlantInfoUser?> CreateNewUserAsync(GoogleAuthenticateRequestBody requestBody, int role)
+        public Task<User?> CreateNewUserAsync(GoogleAuthenticateRequestBody requestBody, int role)
         {
             throw new NotImplementedException();
         }
 
-        public Task<PlantInfoUser?> FindUserByEmailAsync(string email)
+        public Task<User?> FindUserByEmailAsync(string email)
         {
             return _userRepository.FindUserByEmailAsync(email); 
         }
 
-        public Task<PlantInfoUser?> GetUserByIdAsync(int userId)
+        public Task<User?> GetUserByIdAsync(int userId)
         {
             return _userRepository.GetUserByIdAsync(userId); 
         }
@@ -52,7 +52,7 @@ namespace Plants.info.API.Data.Services.UserServices
             return _userRepository.SaveAllChangesAsync(); 
         }
 
-        public async Task UpdateUserTokens(PlantInfoUser user, string token)
+        public async Task UpdateUserTokens(User user, string token)
         {
             user.RefreshToken = token;
             user.RefreshTokenExiryTime = DateTime.Now.AddDays(2);

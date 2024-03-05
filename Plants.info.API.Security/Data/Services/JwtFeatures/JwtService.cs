@@ -15,7 +15,7 @@ namespace Plants.info.API.Data.Services.JwtFeatures
             _jwtHandler = jwtHandler;
 		}
 
-        public Tuple<string, string> GetAuthenticationTokens(PlantInfoUser user)
+        public Tuple<string, string> GetAuthenticationTokens(User user)
         {
             var token = _jwtHandler.GenerateAccessToken(user);
 

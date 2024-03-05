@@ -19,7 +19,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 namespace Plants.info.API.Controllers
 {
     [Route("api/users/{userId}/plants")] // Since we need to gather user information to get plants we reflect the URL as such and set plants as a child resource of Users. 
-   [Authorize] //we have no way to pass down id values to this policy, therefore a custom attribute needs to be created but it is not recommended.
+    [Authorize] //we have no way to pass down id values to this policy, therefore a custom attribute needs to be created but it is not recommended.
     [ApiController]
     public class PlantsController : ControllerBase
     {
@@ -119,13 +119,15 @@ namespace Plants.info.API.Controllers
                 // Verify user Id matches with the user Id specified in the token
                 if (IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
 
-                var user = await _userService.UserExistsAsync(userId);
-                if (!user) return NotFound();
+                var user = await _userService.GetUserByIdAsync(userId);
+                if (user == null) return NotFound();
 
                 // Verify if the plant already exists by checking the name and genus
                 if (await _plantService.DoesPlantExists(userId, plantObject.Name, plantObject.GenusId)) return Conflict();
 
-                var finalPlant = await _plantService.CreatePlantAsync(userId, plantObject); 
+                //var file = Request.Form.Files[0]; 
+
+                var finalPlant = await _plantService.CreatePlantAsync(user, plantObject); 
 
                 return CreatedAtRoute("GetPlantById", new
                 {
@@ -181,7 +183,7 @@ namespace Plants.info.API.Controllers
                 // Get the original plant to patch
                 var plant = await _plantService.GetSinglePlantByIdAsync(userId, plantId);
                 if (plant == null) return NotFound();
-
+ 
                 // ***** TO DO Implement image patching 
                 //patchDocument.Operations.ForEach(o =>
                 //{

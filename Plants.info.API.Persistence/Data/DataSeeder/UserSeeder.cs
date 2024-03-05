@@ -38,7 +38,7 @@ namespace Plants.info.API.Data
                     _ctx.Plants.AddRange(samplePlants);
                 }
 
-                var sampleUser = new PlantInfoUser();
+                var sampleUser = new User();
                 
                 sampleUser.UserName = "dortiz8";
                 sampleUser.Password = "RandomPassWord12";

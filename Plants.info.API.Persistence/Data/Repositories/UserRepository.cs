@@ -14,7 +14,7 @@ namespace Plants.info.API.Data.Repository
             _ctx = userContext;
         }
 
-        public async Task CreateUserAsync(PlantInfoUser userObject)
+        public async Task CreateUserAsync(User userObject)
         {
              await _ctx.Users.AddAsync(userObject); 
         }
@@ -28,22 +28,22 @@ namespace Plants.info.API.Data.Repository
             }
         }
 
-        public async Task<PlantInfoUser?> FindUserByUsernameAsync(string userName)
+        public async Task<User?> FindUserByUsernameAsync(string userName)
         {
             return await _ctx.Users.FirstOrDefaultAsync(x => x.UserName == userName); 
         }
 
-        public async Task<PlantInfoUser?> FindUserByEmailAsync(string email)
+        public async Task<User?> FindUserByEmailAsync(string email)
         {
             return await _ctx.Users.FirstOrDefaultAsync(x => x.Email == email);
         }
 
-        public async Task<IEnumerable<PlantInfoUser>> GetAllUsersAsync()
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
            return await _ctx.Users.OrderBy(x => x.UserName).ToListAsync(); 
         }
 
-        public  async Task<PlantInfoUser?> GetUserByIdAsync(int Id)
+        public  async Task<User?> GetUserByIdAsync(int Id)
         {
             return await _ctx.Users.FirstOrDefaultAsync(x => x.Id == Id); 
         }

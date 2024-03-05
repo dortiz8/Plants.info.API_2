@@ -2,13 +2,16 @@
 using System.Buffers.Text;
 using System.Drawing;
 using System.Xml.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.VisualBasic;
+using Plants.info.API.Business.Data.Services.BlobStorageService;
 using Plants.info.API.Data.Models;
 using Plants.info.API.Data.Repository;
 using Plants.info.API.Data.Services.PlantServices.Interfaces;
 using Plants.info.API.Data.Services.Utils;
 using Plants.info.API.Models;
+using static Azure.Core.HttpHeader;
 
 namespace Plants.info.API.Data.Services.PlantServices
 {
@@ -18,13 +21,13 @@ namespace Plants.info.API.Data.Services.PlantServices
         private readonly IPlantsRepository _plantsRepo;
         private readonly IMenusRepository _menusRepository;
 
-        public PlantService(IPlantsRepository plantsRepo, IMenusRepository menusRepository)
+        public PlantService(IPlantsRepository plantsRepo, IMenusRepository menusRepository) 
 		{
             _plantsRepo = plantsRepo;
             _menusRepository = menusRepository;
         }
 
-        public async Task<Plant> CreatePlantAsync(int userId, PlantCreation plantObject)
+        public async Task<Plant> CreatePlantAsync( User user, PlantCreation plantObject)
         {
             var finalPlant = new Plant()
             {
@@ -35,28 +38,14 @@ namespace Plants.info.API.Data.Services.PlantServices
                 DateFertilized = Convert.ToDateTime(plantObject.DateFertilized),
                 WaterInterval = plantObject.WaterInterval,
                 FertilizeInterval = plantObject.FertilizeInterval,
-                UserId = userId,
+                UserId = user.Id,
 
             };
 
             await _plantsRepo.CreatePlantAsync(finalPlant);
             await _plantsRepo.SaveAllChangesAsync();
 
-            if (plantObject.Image != null)
-            {
-                var plantImage = new PlantImage()
-                {
-                    UserId = userId,
-                    PlantId = finalPlant.Id,
-                    Name = plantObject.Image.Name,
-                    Type = plantObject.Image.Type,
-                    Size = plantObject.Image.Size,
-                    Base64 = plantObject.Image.Base64
-
-                };
-                await _plantsRepo.CreatePlantImageAsync(plantImage);
-                await _plantsRepo.SaveAllChangesAsync();
-            }
+         
 
             return finalPlant; 
         }
@@ -130,7 +119,7 @@ namespace Plants.info.API.Data.Services.PlantServices
                 DateFertilized = plant.DateFertilized,
                 WaterInterval = plant.WaterInterval,
                 FertilizeInterval = plant.FertilizeInterval,
-                Image = editPlantImage
+                //Image = editPlantImage
             };
         }
 
@@ -293,6 +282,17 @@ namespace Plants.info.API.Data.Services.PlantServices
             plantNote.DateEdited = DateAndTime.Now;
 
             await _plantsRepo.SaveAllChangesAsync();
+        }
+
+        public async Task SavePlantImageAsync(int userId, int plantId, string imageURL)
+        {
+            await _plantsRepo.SavePlantImageUrl(userId, plantId, imageURL);
+            await _plantsRepo.SaveAllChangesAsync();
+        }
+
+        public async Task<bool> DoesPlantExists(int userId, int plantId)
+        {
+            return await _plantsRepo.DoesPlantExists(userId, plantId);
         }
     }
 }

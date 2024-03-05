@@ -9,7 +9,7 @@ namespace Plants.info.API.Data.Services.JwtFeatures
 {
 	public interface IJwtHandler
 	{
-		string GenerateAccessToken(PlantInfoUser user);
+		string GenerateAccessToken(User user);
 		string GenerateRefreshToken();
 		ClaimsPrincipal GetPrincipalFromExpiredToken(string token);
     }

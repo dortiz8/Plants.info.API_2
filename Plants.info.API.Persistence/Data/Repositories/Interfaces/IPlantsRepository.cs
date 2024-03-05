@@ -17,6 +17,8 @@ namespace Plants.info.API.Data.Repository
 
         Task DeletePlantAsync(int userId, int id);
         Task<Boolean> DoesPlantExists(int userId, string name, int genus);
+        Task<Boolean> DoesPlantExists(int userId, int plantId);
+
         Task<(IEnumerable<PlantNote>, PaginationMetadata)> GetPlantNotesAsync(int userId, int plantId, int pageNumber, int pageSize);
         Task<PlantNote?> GetSinglePlantNoteAsync(int userId, int plantId, int noteId);
         Task DeletePlantNoteAsync(int userId, int plantId, int noteId);
@@ -25,7 +27,8 @@ namespace Plants.info.API.Data.Repository
         Task DeleteAllPlantNotesByUserIdAsync(int userId, int plantId); 
 
         Task<PlantImage?> GetPlantImage(int userId, int plantId);
-        Task CreatePlantImageAsync(PlantImage plantImage); 
+        Task CreatePlantImageAsync(PlantImage plantImage);
+        Task SavePlantImageUrl(int userId, int plantId, string imageUrl); 
 
     }
 }
