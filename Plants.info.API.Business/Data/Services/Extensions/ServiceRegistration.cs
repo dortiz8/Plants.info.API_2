@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
+using Plants.info.API.Business.Data.Services.AppAuditService;
+using Plants.info.API.Business.Data.Services.AppAuditService.Interfaces;
 using Plants.info.API.Business.Data.Services.BlobStorageService;
 using Plants.info.API.Business.Data.Services.ImageServices;
 using Plants.info.API.Business.Data.Services.ImageServices.Interfaces;
@@ -20,8 +22,7 @@ namespace Plants.info.API.Data.Services.Extensions
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IBlobStorageService, BlobStorageService>();
             services.AddScoped<IImageService, ImageService>();
-
-
+            services.AddScoped<IAppAuditService, AppAuditService>();
         }
     }
 }; 

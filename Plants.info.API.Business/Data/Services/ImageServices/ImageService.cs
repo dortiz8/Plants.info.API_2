@@ -27,7 +27,8 @@ namespace Plants.info.API.Business.Data.Services.ImageServices
                 UserId = userId,
                 PlantId = plantId,
                 Size = file.Length,
-                Type = file.ContentType
+                Type = file.ContentType,
+                DateAdded = DateTime.Now
             };
 
             string containerName = "containerforuserid" + userId; 
@@ -44,6 +45,42 @@ namespace Plants.info.API.Business.Data.Services.ImageServices
             await _plantsRepo.SaveAllChangesAsync();
 
             return plantImage; 
+        }
+
+        public async Task<PlantImage> CreatePlantImageByName(int userId, int plantId, string plantName, string url)
+        {
+            var plantImage = new PlantImage()
+            {
+                Name = plantName,
+                UserId = userId,
+                PlantId = plantId,
+                Size = default,
+                Type = "image/jpeg",
+                Url = url,
+                DateAdded = DateTime.Now
+            };
+
+            await _plantsRepo.CreatePlantImageAsync(plantImage);
+            await _plantsRepo.SaveAllChangesAsync();
+
+            return plantImage;
+
+        }
+
+        public async Task DeletePlantImages(int userId, int plantId)
+        {
+            var images = await _plantsRepo.GetPlantImages(userId, plantId);
+
+            if (images == null) return;
+
+            string containerName = "containerforuserid" + userId;
+
+            var deleted = await _blobStorageService.DeleteImages(containerName, images);
+
+            if (deleted == null || deleted == false) return;
+
+            await _plantsRepo.DeletePlantImages(userId, plantId);
+            await _plantsRepo.SaveAllChangesAsync(); 
         }
     }
 }

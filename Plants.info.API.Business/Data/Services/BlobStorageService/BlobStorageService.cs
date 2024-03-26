@@ -2,6 +2,7 @@
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 using Microsoft.AspNetCore.Http;
+using Plants.info.API.Common.Data.Utils;
 using Plants.info.API.Data.Models;
 using Plants.info.API.Models;
 
@@ -43,6 +44,38 @@ namespace Plants.info.API.Business.Data.Services.BlobStorageService
                 Console.WriteLine(ex.Message);
                 return ""; 
             }
+        }
+
+        public async Task<bool?> DeleteImages(string blobContainerName, IEnumerable<PlantImage> images)
+        {
+            if (images.Count() == 0) return null;
+
+            try
+            {
+                var containerClient = _blobServiceClient.GetBlobContainerClient(blobContainerName);
+                
+                var exists = await containerClient.ExistsAsync();
+
+                if (exists == null || !exists) return null;
+
+                foreach (var image in images)
+                {
+                    if (image.Url == null) continue;
+                    var imageName = Util.GetSubstring(image.Url, blobContainerName);
+                    if (imageName == null) continue; 
+
+                    var response = await containerClient.DeleteBlobIfExistsAsync(imageName); 
+                };
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message); 
+                return false; 
+            }
+
+            return true; 
+
         }
     }
 }

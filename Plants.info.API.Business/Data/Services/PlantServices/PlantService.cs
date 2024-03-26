@@ -53,7 +53,8 @@ namespace Plants.info.API.Data.Services.PlantServices
         public async Task DeletePlantAsync(int userId, int plantId)
         {
             await _plantsRepo.DeletePlantAsync(userId, plantId);
-            await _plantsRepo.DeleteAllPlantNotesByUserIdAsync(userId, plantId); 
+            await _plantsRepo.DeleteAllPlantNotesByUserIdAsync(userId, plantId);
+           
             await _plantsRepo.SaveAllChangesAsync();
         }
 

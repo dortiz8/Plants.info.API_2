@@ -1,4 +1,5 @@
-﻿using Plants.info.API.Data.Contexts;
+﻿
+using Plants.info.API.Data.Contexts;
 using Plants.info.API.Data.Models;
 using Plants.info.API.Data.Repository;
 using Plants.info.API.Models;
@@ -6,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Serilog;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Authorization;
+using Plants.info.API.Business.Data.Services.AppAuditService.Interfaces;
+using Plants.info.API.Common.Data.Utils;
 
 namespace Plants.info.API.Controllers
 {
@@ -18,11 +21,14 @@ namespace Plants.info.API.Controllers
         private readonly IUserRepository _repo;
         private readonly IPlantsRepository _plantRepo;
         private readonly ILogger<PlantsController> _log;
-        public UsersController(IUserRepository repo, IPlantsRepository plantRepo, ILogger<PlantsController> logger)
+        private readonly IAppAuditService _appAuditService;
+
+        public UsersController(IUserRepository repo, IPlantsRepository plantRepo, ILogger<PlantsController> logger, IAppAuditService appAuditService)
         {
             _repo = repo;
             _plantRepo = plantRepo;
             _log = logger ?? throw new ArgumentNullException(nameof(logger));
+            _appAuditService = appAuditService;
         }
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UserOnly>>> GetAllUsers()
@@ -48,7 +54,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting all users", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Users, "Error: GetAllUsers", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
             
@@ -76,7 +82,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting user with Id: {userId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Users, "Error: GetUserById", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
       
@@ -124,7 +130,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while creating new user.", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Users, "Error: CreateUser", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
         }
@@ -146,7 +152,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while deleting user with ID: {userId}.", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Users, "Error: DeleteUser", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
 

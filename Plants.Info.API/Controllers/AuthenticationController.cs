@@ -10,6 +10,8 @@ using Google.Apis.Auth;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Plants.info.API.Business.Data.Services.AppAuditService.Interfaces;
+using Plants.info.API.Common.Data.Utils;
 using Plants.info.API.Data.Models;
 using Plants.info.API.Data.Models.Authentication;
 using Plants.info.API.Data.Repository;
@@ -33,17 +35,19 @@ namespace Plants.info.API.Controllers
         private readonly IUserService _userService;
         private readonly IJwtService _jwtService;
         private readonly ILogger<AuthenticationController> _log;
+        private readonly IAppAuditService _appAuditService;
 
         public IJwtHandler _jwtHandler { get; }
 
         public AuthenticationController(IConfiguration configuration, IUserService userService, IJwtHandler jwtHandler,
-            IJwtService jwtService, ILogger<AuthenticationController> logger)
+            IJwtService jwtService, ILogger<AuthenticationController> logger, IAppAuditService appAuditService)
         {
             _config = configuration ?? throw new ArgumentNullException(nameof(configuration));
             _userService = userService;
             _jwtHandler = jwtHandler;
             _jwtService = jwtService;
-            _log = logger; 
+            _log = logger;
+            _appAuditService = appAuditService;
         }
 
 
@@ -51,34 +55,41 @@ namespace Plants.info.API.Controllers
         public async Task<ActionResult<string>> Authenticate([FromBody] AuthenticationRequestBody authenticationRequestBody)
         {
             // Step #1 Validate user credentials
-            //var user = await _userService.FindUserByUsernameAsync(authenticationRequestBody.UserName);
-            var user = new User(); // fix
+            try
+            {
+                var user = new User(); // fix
 
-            if (user == null) return NotFound(new AuthResponseBody { ErrorMessage = "No account found" });
+                if (user == null) return NotFound(new AuthResponseBody { ErrorMessage = "No account found" });
 
-            var psw1 = user.Password;
-            var psw2 = authenticationRequestBody.Password;
-            var valid = ValidateUserCreds(psw1, psw2);
+                var psw1 = user.Password;
+                var psw2 = authenticationRequestBody.Password;
+                var valid = ValidateUserCreds(psw1, psw2);
 
-            if (valid != 0) return Unauthorized(new AuthResponseBody { ErrorMessage = "Invalid credentials" });
-
-
-            // Step #2 & #3 create a security key and signing credentials
+                if (valid != 0) return Unauthorized(new AuthResponseBody { ErrorMessage = "Invalid credentials" });
 
 
-            var token = _jwtHandler.GenerateAccessToken(user);
-
-            var refreshToken = _jwtHandler.GenerateRefreshToken();
-
-            user.RefreshToken = refreshToken;
-            user.RefreshTokenExiryTime = DateTime.Now.AddDays(2);
-
-            await _userService.SaveAllChangesAsync();
+                // Step #2 & #3 create a security key and signing credentials
 
 
-            // Return a response body with the token included
-            return Ok(new AuthResponseBody { IsAuthSuccessful = true, Token = token, RefreshToken = refreshToken, UserId = user.Id });
+                var token = _jwtHandler.GenerateAccessToken(user);
 
+                var refreshToken = _jwtHandler.GenerateRefreshToken();
+
+                user.RefreshToken = refreshToken;
+                user.RefreshTokenExiryTime = DateTime.Now.AddDays(2);
+
+                await _userService.SaveAllChangesAsync();
+
+                //var user = await _userService.FindUserByUsernameAsync(authenticationRequestBody.UserName);
+
+                // Return a response body with the token included
+                return Ok(new AuthResponseBody { IsAuthSuccessful = true, Token = token, RefreshToken = refreshToken, UserId = user.Id });
+            }
+            catch (Exception ex)
+            {
+                await _appAuditService.AddToAppAudit((int)ToolIds.Auth, "Error: Authenticate", ex.Message);
+                return StatusCode(500, "A problem occurred while handling your request");
+            }
         }
 
         [HttpPost("googleAuthenticate")]
@@ -113,7 +124,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while retrieving token", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Auth, "Error: GoogleAuthenticate", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
         }

@@ -28,7 +28,8 @@ namespace Plants.info.API.Data.Repository
 
         Task<PlantImage?> GetPlantImage(int userId, int plantId);
         Task CreatePlantImageAsync(PlantImage plantImage);
-        Task SavePlantImageUrl(int userId, int plantId, string imageUrl); 
-
+        Task SavePlantImageUrl(int userId, int plantId, string imageUrl);
+        Task DeletePlantImages(int userId, int plantId);
+        Task<IEnumerable<PlantImage>> GetPlantImages(int userId, int plantId); 
     }
 }

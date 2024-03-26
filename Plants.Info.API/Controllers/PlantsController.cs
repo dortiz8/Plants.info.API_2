@@ -15,6 +15,10 @@ using Plants.info.API.Data.Services.PlantServices.Interfaces;
 using Plants.info.API.Data.Services.UserServices;
 using Plants.info.API.Data.Services.Utils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Plants.info.API.Business.Data.Services.ImageServices.Interfaces;
+using Plants.info.API.Business.Data.Services.AppAuditService.Interfaces;
+using Plants.info.API.Common.Data.Models;
+using Plants.info.API.Common.Data.Utils;
 
 namespace Plants.info.API.Controllers
 {
@@ -27,15 +31,20 @@ namespace Plants.info.API.Controllers
         private readonly IUserService _userService;
         private readonly IPlantService _plantService;
         private readonly ILogger<PlantsController> _log;
+        private readonly IAppAuditService _appAuditService; 
+
         const int maxPageSizeForPlants = 100;
-        
+        private readonly IImageService _imageService;
+
         public PlantsController(IPlantsService plantsService, IUserService userService, IPlantService plantService,
-             ILogger<PlantsController> logger)
+             ILogger<PlantsController> logger, IImageService imageService, IAppAuditService appAuditService)
         {
             _plantsService = plantsService;
             _userService = userService;
             _plantService = plantService;
             _log = logger ?? throw new ArgumentNullException(nameof(logger)); // Null check in case the container changes and it returns a null value
+            _imageService = imageService;
+            _appAuditService = appAuditService;
         }
 
 
@@ -46,6 +55,7 @@ namespace Plants.info.API.Controllers
         {
             try
             {
+                
                 // Verify user Id matches with the user Id specified in the token
                 if(IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
 
@@ -70,7 +80,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plants for user id {userId}", ex); 
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: GetPlantsByUserId", ex.Message); 
                 return StatusCode(500, "A problem occurred while handling your request");
             }
         }
@@ -100,7 +110,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plants for user id {userId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: GetPlantByUserId", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
          
@@ -138,7 +148,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plants for user id {userId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: CreatePlant", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
            
@@ -163,7 +173,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plants for user id {userId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: UpdatePlant", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
            
@@ -203,7 +213,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plants for user id {userId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: PatchPlant", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
            
@@ -224,13 +234,15 @@ namespace Plants.info.API.Controllers
                 var plant = await _plantService.GetSinglePlantByIdAsync(userId, plantId);
                 if (plant == null) return NotFound();
 
+                await _imageService.DeletePlantImages(userId, plantId); 
+
                 await _plantService.DeletePlantAsync(userId, plantId);
 
                 return NoContent();
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while deleting plant {plantId} for user id {userId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: DeletePlant", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
            
@@ -266,7 +278,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plant notes for user id {userId} and plant id {plantId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: GetPlantNotes", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
         }
@@ -294,7 +306,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plant note for user id {userId}, plant id {plantId}, and note id {noteId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: GetPlantNoteById", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
         }
@@ -321,7 +333,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plant notes for user id {userId} and plant id {plantId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: DeletePlantNote", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
         }
@@ -355,7 +367,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plant notes for user id {userId} and plant id {plantId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: CreatePlantNote", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
         }
@@ -396,7 +408,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plants for user id {userId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: PatchPlantNote", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
 
@@ -424,7 +436,7 @@ namespace Plants.info.API.Controllers
             }
             catch (Exception ex)
             {
-                _log.LogCritical($"Exception while getting plants stats for user id {userId}", ex);
+                await _appAuditService.AddToAppAudit((int)ToolIds.Plants, "Error: GetPlantsStatsByIdAsync", ex.Message);
                 return StatusCode(500, "A problem occurred while handling your request");
             }
         }

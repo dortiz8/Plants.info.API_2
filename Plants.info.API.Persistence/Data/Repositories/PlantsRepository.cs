@@ -179,5 +179,20 @@ namespace Plants.info.API.Data.Repository
             var count = await _ctx.Plants.CountAsync(x => x.UserId == userId && x.Id == plantId);
             return (count > 0);
         }
+
+        public async Task DeletePlantImages(int userId, int plantId)
+        {
+            var imagesToRemove = await _ctx.PlantImage.Where(x => x.UserId == userId && x.PlantId == plantId).ToListAsync();
+
+            if (imagesToRemove != null)
+            {
+                _ctx.PlantImage.RemoveRange(imagesToRemove);
+            }
+        }
+
+        public async Task<IEnumerable<PlantImage>> GetPlantImages(int userId, int plantId)
+        {
+            return await _ctx.PlantImage.Where(x => x.UserId == userId && x.PlantId == plantId).ToListAsync();
+        }
     }
 }

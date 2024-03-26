@@ -11,6 +11,7 @@ namespace Plants.info.API.Data.Models
         public Int64 Size { get; set; }
         public string? Base64 { get; set; }
         public string? Url { get; set; }
+        public DateTime? DateAdded { get; set; }
     }
 }
 
